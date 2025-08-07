@@ -5,23 +5,36 @@ name: "Xinyu Zhang"
 description: "Ph.D. Student in Communication Studies"
 url: "https://bluexinyu.github.io"
 
+# 添加学术图标支持
+head_scripts:
+  - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
+
 author:
   name: "Xinyu Zhang"
-  avatar: "https://via.placeholder.com/300x300/4472C4/ffffff?text=XZ"
+  avatar: "/assets/images/profile.jpg"
   bio: |
-    **Ph.D. Student**  
-    Department of Communication Studies  
-    Michigan State University
-    
+    **Ph.D. Student**<br>
+    Department of Communication Studies<br>
+    College of Communication Arts and Sciences<br>
+    Michigan State University<br><br>
     **Email:** zxinyu@msu.edu
   location: "East Lansing, Michigan"
   links:
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square ai-fw"
+      url: "https://scholar.google.com/citations?user=LxyHOE8AAAAJ&hl=en"
+    - label: "ResearchGate"
+      icon: "ai ai-researchgate-square ai-fw"
+      url: "https://www.researchgate.net/profile/Xinyu-Zhang-293?ev=hdr_xprf"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://x.com/Xinyu__Zhang"
+    - label: "Instagram" 
+      icon: "fab fa-fw fa-instagram"
+      url: "https://www.instagram.com/bea_xinyu/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bluexinyu"
-    - label: "Instagram" 
-      icon: "fab fa-fw fa-instagram"
-      url: "#"
 
 plugins:
   - jekyll-paginate
@@ -46,3 +59,4 @@ defaults:
 
 minimal_mistakes_skin: "default"
 paginate: 6
+paginate_path: /page:num/
