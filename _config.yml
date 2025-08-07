@@ -5,6 +5,7 @@ name: "Xinyu Zhang"
 description: "Ph.D. Student in Communication Studies"
 url: "https://bluexinyu.github.io"
 
+# 正确的academicons CDN
 head_scripts:
   - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
@@ -12,22 +13,21 @@ author:
   name: "Xinyu Zhang"
   avatar: "/assets/images/profile.jpg"
   bio: |
-    Ph.D. Student<br>
-    Department of Communication Studies<br>
-    College of Communication Arts and Sciences<br>
-    Michigan State University<br>
-    <br>
-    <small><strong>Email:</strong> zxinyu@msu.edu</small>
+    <span style="font-size: 0.9em; font-weight: 500;">Ph.D Student</span><br>
+    <span style="font-size: 0.8em;">Department of Communication</span><br>
+    <span style="font-size: 0.8em;">College of Communication Arts and Sciences</span><br>
+    <span style="font-size: 0.8em;">Michigan State University</span><br>
+    <span style="font-size: 0.75em; color: #666;">Email: zxinyu@msu.edu</span>
   location: "East Lansing, Michigan"
   links:
     - label: "Google Scholar"
-      icon: "ai ai-google-scholar-square ai-fw"
+      icon: "ai ai-google-scholar"
       url: "https://scholar.google.com/citations?user=LxyHOE8AAAAJ&hl=en"
     - label: "ResearchGate"
-      icon: "ai ai-researchgate-square ai-fw"
+      icon: "ai ai-researchgate"
       url: "https://www.researchgate.net/profile/Xinyu-Zhang-293?ev=hdr_xprf"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-twitter"
       url: "https://x.com/Xinyu__Zhang"
     - label: "Instagram" 
       icon: "fab fa-fw fa-instagram"
@@ -60,12 +60,3 @@ defaults:
 minimal_mistakes_skin: "default"
 paginate: 5
 paginate_path: /page:num/
-
-# 自定义样式
-sass:
-  sass_dir: _sass
-  style: compressed
-
-
-# 自定义样式
-custom_css: /assets/css/custom.css
