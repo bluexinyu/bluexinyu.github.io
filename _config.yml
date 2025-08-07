@@ -5,7 +5,6 @@ name: "Xinyu Zhang"
 description: "Ph.D. Student in Communication Studies"
 url: "https://bluexinyu.github.io"
 
-# 添加学术图标支持
 head_scripts:
   - https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
@@ -13,11 +12,12 @@ author:
   name: "Xinyu Zhang"
   avatar: "/assets/images/profile.jpg"
   bio: |
-    **Ph.D. Student**<br>
+    Ph.D. Student<br>
     Department of Communication Studies<br>
     College of Communication Arts and Sciences<br>
-    Michigan State University<br><br>
-    **Email:** zxinyu@msu.edu
+    Michigan State University<br>
+    <br>
+    <small><strong>Email:</strong> zxinyu@msu.edu</small>
   location: "East Lansing, Michigan"
   links:
     - label: "Google Scholar"
@@ -58,5 +58,14 @@ defaults:
       author_profile: true
 
 minimal_mistakes_skin: "default"
-paginate: 6
+paginate: 5
 paginate_path: /page:num/
+
+# 自定义样式
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# 自定义样式
+custom_css: /assets/css/custom.css
