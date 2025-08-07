@@ -39,6 +39,17 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+# Jekyll处理_pages目录的设置
+include:
+  - _pages
+
+# Jekyll配置
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
 defaults:
   - scope:
       path: ""
@@ -52,4 +63,6 @@ defaults:
     values:
       layout: single  
       author_profile: true
+
+minimal_mistakes_skin: "default"
 
