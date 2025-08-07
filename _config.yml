@@ -102,3 +102,9 @@ defaults:
       layout: single
       author_profile: true
 
+# 添加到文件末尾
+minimal_mistakes_skin: "default"
+
+# 页面分页
+paginate: 6
+paginate_path: /page:num/

@@ -1,0 +1,13 @@
+main:
+  - title: "About"
+    url: /about/
+  - title: "Blog"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Conferences"
+    url: /conferences/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/
