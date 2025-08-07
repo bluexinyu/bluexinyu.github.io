@@ -1,18 +1,18 @@
-/* 调整头像为长方形专业照片 */
+/* 调整头像为方形专业照片 */
 .author__avatar img {
-  width: 120px !important;
-  height: 160px !important;
+  width: 140px !important;
+  height: 140px !important;
   object-fit: cover;
   border-radius: 8px;
 }
 
-/* 缩小作者信息字体 */
-.author__bio {
-  font-size: 0.8em !important;
-  margin-top: 1em;
+/* 调整名字字体大小 */
+.author__name {
+  font-size: 1.1em !important;
+  font-weight: bold;
 }
 
-/* 缩小社交链接字体 */
+/* 调整社交链接字体 */
 .author__urls li a {
   font-size: 0.75em !important;
 }
@@ -20,4 +20,5 @@
 /* 调整位置信息字体 */
 .author__location {
   font-size: 0.75em !important;
+  color: #666;
 }
