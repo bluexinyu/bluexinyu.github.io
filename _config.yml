@@ -1,0 +1,30 @@
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+title: "Xinyu Zhang"
+name: "Xinyu Zhang"
+description: "Personal website and blog"
+url: "https://xinyu-zhang.github.io"
+
+author:
+  name: "Xinyu Zhang"
+  bio: "Welcome to my personal website"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bluexinyu"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+
