@@ -1,5 +1,79 @@
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
+# 网站基本信息
+title: "Xinyu Zhang"
+name: "Xinyu Zhang"
+description: "Ph.D. Student in Communication Studies"
+url: "https://bluexinyu.github.io"
+baseurl: ""
+
+# 作者信息
+author:
+  name: "Xinyu Zhang"
+  avatar: "/assets/images/profile.jpg" # 你需要上传个人照片到这个路径
+  bio: |
+    **Ph.D. Student**  
+    Department of Communication Studies  
+    College of Communication Arts and Sciences  
+    Michigan State University  
+    Email: zxinyu [at] msu [dot] edu
+  location: "East Lansing, Michigan"
+  links:
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square"
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+    - label: "ResearchGate"
+      icon: "ai ai-researchgate-square"
+      url: "https://www.researchgate.net/profile/YOUR_PROFILE"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/your_handle"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your_profile"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/your_handle"
+
+# 插件配置
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# 导航菜单
+navigation:
+  - title: "About"
+    url: /about/
+  - title: "Publications"
+    url: /publications/
+  - title: "Conferences"
+    url: /conferences/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/
+
+# 默认设置 - 确保所有页面都显示作者信息
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 title: "Xinyu Zhang"
 name: "Xinyu Zhang"
 description: "Personal website and blog"
