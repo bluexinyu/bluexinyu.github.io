@@ -84,3 +84,65 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   background-color: #0052a3 !important;
   border-color: #0052a3 !important;
 }
+
+/* 放大左侧个人信息栏 */
+@media (min-width: 64em) {
+  .sidebar {
+    width: calc(200px * 1.2) !important; /* 原来200px，现在放大20% */
+  }
+  
+  .sidebar.sticky {
+    width: calc(200px * 1.2) !important;
+  }
+}
+
+@media (min-width: 80em) {
+  .sidebar {
+    width: calc(300px * 1.15) !important; /* 原来300px，现在放大15% */
+  }
+  
+  .sidebar.sticky {
+    width: calc(300px * 1.15) !important;
+  }
+}
+
+/* 调整主内容区域以适应更宽的sidebar */
+@media (min-width: 64em) {
+  .archive {
+    width: calc(100% - 200px * 1.2 - 3em) !important;
+    float: right !important;
+  }
+}
+
+@media (min-width: 80em) {
+  .archive {
+    width: calc(100% - 300px * 1.15 - 3em) !important;
+  }
+}
+
+/* 等比例放大author信息元素 */
+.author__avatar img {
+  width: 140px !important; /* 从120px增加到140px */
+  height: 175px !important; /* 从150px增加到175px */
+}
+
+.author__name {
+  font-size: 1.2em !important; /* 从1.1em增加 */
+}
+
+.author__bio {
+  font-size: 0.8em !important; /* 从0.7em增加 */
+  line-height: 1.5 !important;
+}
+
+.author__location {
+  font-size: 0.75em !important; /* 从0.65em增加 */
+}
+
+.author__urls li {
+  font-size: 0.75em !important; /* 从0.65em增加 */
+}
+
+.author__urls {
+  margin-top: 0.8em !important;
+}
