@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   border-color: var(--morandi-green-dark) !important;
 }
 
-/* 专门修复single layout页面的空白问题 */
+/* 调整响应式断点 - 只在较小屏幕时切换到纵向布局 */
 .layout--single .archive {
   width: 100% !important;
   float: none !important;
@@ -94,11 +94,18 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   padding: 0 1em !important;
 }
 
+/* 更大的断点，保持横向布局更久 */
+@media (min-width: 48em) {
+  .layout--single .archive {
+    width: calc(100% - 180px - 1em) !important;
+    float: right !important;
+    padding-left: 1em !important;
+  }
+}
+
 @media (min-width: 64em) {
   .layout--single .archive {
     width: calc(100% - 200px - 1em) !important;
-    float: right !important;
-    padding-left: 1em !important;
   }
 }
 
@@ -116,15 +123,18 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   border-radius: 8px !important;
 }
 
+/* 简化个人信息显示 */
 .author__name {
   font-family: "Source Sans Pro", sans-serif !important;
-  font-size: 1.2em !important;
+  font-size: 1.1em !important;
   font-weight: 600 !important;
+  margin-bottom: 0.5em !important;
 }
 
 .author__bio {
   font-size: 0.8em !important;
-  line-height: 1.5 !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1em !important;
 }
 
 .author__location {
@@ -141,7 +151,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   line-height: 1.6 !important;
 }
 
-/* Blog页面样式 */
+/* Blog页面特殊样式 */
 .page__content p strong {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
@@ -149,8 +159,18 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   margin-right: 1em !important;
 }
 
+/* Blog条目间距调整 */
+.page__content br + p {
+  margin-top: 0.3em !important;
+}
+
 /* 期刊名称斜体颜色 */
 .page__content em {
   font-style: italic !important;
   color: var(--morandi-green-dark) !important;
+}
+
+/* 隐藏页面标题（避免重复显示Xinyu Zhang） */
+.page__title {
+  display: none !important;
 }
