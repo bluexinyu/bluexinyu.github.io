@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 让所有页面标题都像Education一样的绿色格式 */
+/* 让所有页面标题(About, Blog等)都像Education一样的绿色格式 */
 .page__title, .page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
@@ -37,20 +37,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   margin-top: 0 !important;
 }
 
-/* APA悬挂缩进格式 - 专门针对Publications页面 */
-.page__content p:has(strong:first-child) {
-  text-indent: -2em !important;
-  padding-left: 2em !important;
-  margin-bottom: 1.2em !important;
-  line-height: 1.6 !important;
-}
-
-/* 确保Publications列表项有悬挂缩进 */
-.page__content p strong:first-child {
-  margin-left: 0 !important;
-}
-
-/* 三级标题 */
+/* 三级标题稍小一点 */
 .page__content h3 {
   font-size: 1.1em !important;
   font-weight: 600 !important;
@@ -113,7 +100,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
 }
 
 /* Blog页面样式 */
-.page__content p strong:not(:first-child) {
+.page__content p strong {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
   font-size: 0.9em !important;
@@ -150,14 +137,6 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
 @media (min-width: 80em) {
   .layout--single .archive {
     width: calc(100% - 300px - 1em) !important;
-  }
-}
-
-/* 移动设备上的悬挂缩进调整 */
-@media (max-width: 768px) {
-  .page__content p:has(strong:first-child) {
-    text-indent: -1.5em !important;
-    padding-left: 1.5em !important;
   }
 }
 
