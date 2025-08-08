@@ -66,3 +66,12 @@ defaults:
 
 minimal_mistakes_skin: "default"
 
+
+# 学术字体配置
+google_fonts:
+  - name: "Crimson Text"
+    weights: "400,400i,600,600i"
+  - name: "Source Sans Pro" 
+    weights: "300,400,600"
+  - name: "Source Code Pro"
+    weights: "400"

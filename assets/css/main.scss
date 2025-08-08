@@ -7,7 +7,25 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* 自定义样式 - 调整头像为长方形 */
+// 导入Google字体
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+
+/* 学术字体配置 */
+html {
+  font-size: 13px !important;
+}
+
+body {
+  font-family: "Crimson Text", Georgia, serif !important;
+  line-height: 1.5 !important;
+}
+
+/* 标题使用无衬线字体 */
+h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
+  font-family: "Source Sans Pro", Arial, sans-serif !important;
+}
+
+/* 调整头像为长方形 */
 .author__avatar img {
   width: 120px !important;
   height: 150px !important;
@@ -15,52 +33,38 @@
   border-radius: 8px !important;
 }
 
-/* 缩小作者信息所有字体 */
+/* 缩小作者信息字体 */
 .author__name {
-  font-size: 1.0em !important;
-  margin-bottom: 0.5em !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
 }
 
 .author__bio {
   font-size: 0.7em !important;
-  line-height: 1.3 !important;
-  margin: 0 !important;
+  line-height: 1.4 !important;
 }
 
 .author__location {
   font-size: 0.65em !important;
-  margin-top: 0.5em !important;
   color: #666 !important;
-}
-
-.author__urls {
-  margin-top: 0.5em !important;
 }
 
 .author__urls li {
   font-size: 0.65em !important;
 }
 
-.author__urls a {
-  font-size: 1em !important;
-}
-
-/* Publications页面字体调整 */
+/* 主要内容区域字体调整 */
 .page__content {
   font-size: 0.85em !important;
+  line-height: 1.6 !important;
 }
 
 .page__content h2 {
   font-size: 1.3em !important;
-  margin-bottom: 1em !important;
+  font-weight: 600 !important;
 }
 
 .page__content p {
-  line-height: 1.4 !important;
-  margin-bottom: 0.8em !important;
-}
-
-/* 调整正文内容字体 */
-.page__content strong {
-  font-weight: 600 !important;
+  margin-bottom: 0.9em !important;
 }
