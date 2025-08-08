@@ -97,3 +97,70 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   font-size: 1.3em !important;
   font-weight: 600 !important;
 }
+
+/* Blog页面学术风格调整 */
+.archive__item {
+  margin-bottom: 2em !important;
+  padding-bottom: 1.5em !important;
+  border-bottom: 1px solid #f0f0f0 !important;
+}
+
+.archive__item:last-child {
+  border-bottom: none !important;
+}
+
+.archive__item-title {
+  font-size: 1.1em !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em !important;
+  line-height: 1.3 !important;
+}
+
+.archive__item-title a {
+  color: #2c3e50 !important;
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  color: #3498db !important;
+  text-decoration: underline !important;
+}
+
+.archive__item-excerpt {
+  font-size: 0.85em !important;
+  line-height: 1.5 !important;
+  color: #666 !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0 !important;
+}
+
+.page__meta {
+  font-size: 0.75em !important;
+  color: #888 !important;
+  margin-bottom: 0.5em !important;
+  font-style: italic !important;
+}
+
+/* Blog归档页面样式 */
+.layout--posts .archive__item {
+  margin-bottom: 1.5em !important;
+  padding-bottom: 1em !important;
+}
+
+.layout--posts .archive__item-title {
+  font-size: 1.0em !important;
+}
+
+.layout--posts .archive__item-excerpt {
+  font-size: 0.8em !important;
+}
+
+/* 首页Recent Posts标题 */
+.page__content h2 {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  margin-bottom: 1.5em !important;
+  padding-bottom: 0.5em !important;
+  border-bottom: 2px solid #3498db !important;
+}
