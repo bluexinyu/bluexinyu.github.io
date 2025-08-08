@@ -20,27 +20,28 @@ plugins:
 author:
   name: "Xinyu Zhang"
   avatar: "/assets/images/profile.jpg"
-  bio: "Ph.D Student<br>Department of Communication<br>College of Communication Arts and Sciences<br>Michigan State University"
-  location: "East Lansing, MI"
-  email: "zxinyu@msu.edu"
+  bio: |
+    Ph.D Student<br>
+    Department of Communication<br>
+    College of Communication Arts and Sciences<br>
+    Michigan State University<br>
+    Email: zxinyu@msu.edu
+  location: "East Lansing, Michigan"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zxinyu@msu.edu"
     - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=YOUR_ID"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=LxyHOE8AAAAJ&hl=en"
     - label: "ResearchGate"
-      icon: "fab fa-fw fa-researchgate"
-      url: "https://www.researchgate.net/profile/YOUR_PROFILE"
+      icon: "fab fa-researchgate"
+      url: "https://www.researchgate.net/profile/Xinyu-Zhang-293?ev=hdr_xprf"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/YOUR_HANDLE"
+      icon: "fab fa-twitter"
+      url: "https://x.com/Xinyu__Zhang"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/YOUR_HANDLE"
+      icon: "fab fa-instagram"
+      url: "https://www.instagram.com/bea_xinyu/"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fab fa-github"
       url: "https://github.com/bluexinyu"
 
 # Defaults

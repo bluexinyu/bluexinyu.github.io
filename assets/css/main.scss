@@ -26,22 +26,18 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 隐藏页面主标题，避免重复 */
-.page__title {
-  display: none !important;
-}
-
-/* 二级标题样式 */
-.page__content h2 {
+/* Make About and Blog titles same as Education - with green line */
+.page__content h2, .page__title {
   font-size: 1.3em !important;
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
   margin-bottom: 1.5em !important;
   padding-bottom: 0.5em !important;
   border-bottom: 2px solid var(--morandi-green) !important;
+  margin-top: 0 !important;
 }
 
-/* 链接颜色 */
+/* Links */
 .page__content a {
   color: var(--morandi-green) !important;
   text-decoration: none !important;
@@ -52,7 +48,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   text-decoration: underline !important;
 }
 
-/* 导航链接 */
+/* Navigation */
 .masthead__menu-item a {
   color: var(--morandi-green-dark) !important;
 }
@@ -61,7 +57,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   color: var(--morandi-green) !important;
 }
 
-/* 简化的sidebar调整 */
+/* Sidebar */
 .author__avatar img {
   width: 140px !important;
   height: 175px !important;
@@ -94,7 +90,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   line-height: 1.6 !important;
 }
 
-/* Blog页面特殊样式 */
+/* Blog posts styling */
 .page__content p strong {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
@@ -102,37 +98,13 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   margin-right: 1em !important;
 }
 
-/* 期刊名称斜体颜色 */
+/* Journal names in italics */
 .page__content em {
   font-style: italic !important;
   color: var(--morandi-green-dark) !important;
 }
 
-/* 调整响应式断点 - 更晚切换到竖屏模式 */
-.layout--single .archive {
-  width: 100% !important;
-  float: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.layout--single .page__content {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.layout--single .page__inner-wrap {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 1em !important;
-}
-
-/* 从更大的屏幕开始启用横向布局 */
+/* Responsive layout */
 @media (min-width: 40em) {
   .layout--single .archive {
     width: calc(100% - 160px - 1em) !important;
