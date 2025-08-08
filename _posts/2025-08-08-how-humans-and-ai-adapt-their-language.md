@@ -22,6 +22,129 @@ toc: false
 }
 </style>
 
+
+<!-- 美化样式 -->
+<style>
+.blog-project {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.blog-project h1:first-child {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 30px 40px;
+  margin: 0;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blog-project .author-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: rgba(255,255,255,0.9);
+  padding: 0 40px 20px 40px;
+  text-align: center;
+}
+
+.blog-project .nav-tabs {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.blog-project .nav-link {
+  color: #666;
+  font-weight: 500;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.blog-project .nav-link.active {
+  background: white;
+  color: #667eea;
+  border-bottom: 3px solid #667eea;
+}
+
+.blog-project .nav-link:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.blog-project .tab-content {
+  padding: 40px;
+  line-height: 1.7;
+}
+
+.blog-project h2 {
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin: 35px 0 20px 0;
+  padding-left: 20px;
+  border-left: 5px solid #667eea;
+}
+
+.blog-project h3 {
+  color: #34495e;
+  font-size: 1.3em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-project p {
+  font-size: 1.05em;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.blog-project pre {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 25px;
+  font-size: 0.95em;
+  overflow-x: auto;
+}
+
+.blog-project .figure {
+  text-align: center;
+  margin: 40px 0;
+  padding: 25px;
+  background: #fafafa;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+}
+
+.blog-project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .blog-project {
+    margin: 20px 10px;
+    border-radius: 8px;
+  }
+  .blog-project h1:first-child {
+    padding: 25px 20px;
+    font-size: 1.6em;
+  }
+  .blog-project .tab-content {
+    padding: 25px 20px;
+  }
+}
+</style>
+
+<div class="blog-project">
 <div class="html-container">
 <!DOCTYPE html>
 
@@ -2212,3 +2335,4 @@ $(document).ready(function ()  {
 </html>
 </div>
 
+</div>
