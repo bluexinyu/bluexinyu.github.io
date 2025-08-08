@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-I am a Ph.D. student in Communication Studies at [Michigan State University](https://comm.msu.edu/), advised by [Dr. Yoo Jung (Erika) Oh](https://comartsci.msu.edu/our-people/yoo-jung-erika-oh). My research uses experimental methods to study persuasive chatbots and social support in digital health contexts.
+I am a Ph.D. student in Communication Studies at [Michigan State University](https://msu.edu), advised by [Dr. Yoo Jung (Erika) Oh](https://comartsci.msu.edu/our-people/yoo-jung-erika-oh). My research uses experimental methods to study persuasive chatbots and social support in digital health contexts.
 
 Methodologically, I conduct controlled experiments and analyze large-scale digital data using Python and R for natural language processing and statistical modeling.
 
@@ -18,15 +18,15 @@ My research has been published in *Journal of Medical Internet Research*, *Archi
 
 **Ph.D. in Communication Studies** (2024—present)  
 *Michigan State University*  
-Advisor: [Dr. Yoo Jung (Erika) Oh](https://comartsci.msu.edu/our-people/yoo-jung-erika-oh)
+Advisor: Dr. Yoo Jung (Erika) Oh
 
 **M.A. in Communication Studies** (2022—2024)  
 *Kent State University*  
-Advisor: [Professor Nichole Egbert](https://www.kent.edu/comm/profile/nichole-l-egbert)
+Advisor: Professor Nichole Egbert
 
 **M.A. in Communication Studies** (2020—2022)  
 *Renmin University*  
-Advisor: [Professor Yan Yan](https://scholar.google.com/citations?user=T8V7Wk8AAAAJ&hl=en)
+Advisor: Professor Yan Yan
 
 **B.A. in Business Administration** (2016—2020)  
 *Zhongnan University of Economics and Law*

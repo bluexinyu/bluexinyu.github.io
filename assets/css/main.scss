@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   border-color: var(--morandi-green-dark) !important;
 }
 
-/* 调整响应式断点 - 只在较小屏幕时切换到纵向布局 */
+/* 调整响应式断点 */
 .layout--single .archive {
   width: 100% !important;
   float: none !important;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   padding: 0 1em !important;
 }
 
-/* 更大的断点，保持横向布局更久 */
+/* 保持横向布局更久 */
 @media (min-width: 48em) {
   .layout--single .archive {
     width: calc(100% - 180px - 1em) !important;
@@ -123,7 +123,6 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   border-radius: 8px !important;
 }
 
-/* 简化个人信息显示 */
 .author__name {
   font-family: "Source Sans Pro", sans-serif !important;
   font-size: 1.1em !important;
@@ -168,9 +167,4 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
 .page__content em {
   font-style: italic !important;
   color: var(--morandi-green-dark) !important;
-}
-
-/* 隐藏页面标题（避免重复显示Xinyu Zhang） */
-.page__title {
-  display: none !important;
 }
