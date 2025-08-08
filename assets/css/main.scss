@@ -1,11 +1,8 @@
 ---
 ---
-
 @charset "utf-8";
-
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
 /* 莫兰迪绿色变量定义 */
@@ -29,7 +26,18 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 莫兰迪绿色主题应用 */
+/* 统一所有页面的主标题格式 */
+.page__title {
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  color: var(--morandi-green-dark) !important;
+  margin-bottom: 1.5em !important;
+  padding-bottom: 0.5em !important;
+  border-bottom: 2px solid var(--morandi-green) !important;
+  margin-top: 0 !important;
+}
+
+/* 二级标题样式 */
 .page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
@@ -59,63 +67,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   color: var(--morandi-green) !important;
 }
 
-/* 按钮样式 */
-.btn--primary {
-  background-color: var(--morandi-green) !important;
-  border-color: var(--morandi-green) !important;
-}
-
-.btn--primary:hover {
-  background-color: var(--morandi-green-dark) !important;
-  border-color: var(--morandi-green-dark) !important;
-}
-
-/* 调整响应式断点 */
-.layout--single .archive {
-  width: 100% !important;
-  float: none !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.layout--single .page__content {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.layout--single .page__inner-wrap {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 1em !important;
-}
-
-/* 保持横向布局更久 */
-@media (min-width: 48em) {
-  .layout--single .archive {
-    width: calc(100% - 180px - 1em) !important;
-    float: right !important;
-    padding-left: 1em !important;
-  }
-}
-
-@media (min-width: 64em) {
-  .layout--single .archive {
-    width: calc(100% - 200px - 1em) !important;
-  }
-}
-
-@media (min-width: 80em) {
-  .layout--single .archive {
-    width: calc(100% - 300px - 1em) !important;
-  }
-}
-
-/* 个人信息栏样式 */
+/* 简化的sidebar调整 */
 .author__avatar img {
   width: 140px !important;
   height: 175px !important;
@@ -125,15 +77,13 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
 
 .author__name {
   font-family: "Source Sans Pro", sans-serif !important;
-  font-size: 1.1em !important;
+  font-size: 1.2em !important;
   font-weight: 600 !important;
-  margin-bottom: 0.5em !important;
 }
 
 .author__bio {
   font-size: 0.8em !important;
-  line-height: 1.4 !important;
-  margin-bottom: 1em !important;
+  line-height: 1.5 !important;
 }
 
 .author__location {
@@ -158,13 +108,29 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   margin-right: 1em !important;
 }
 
-/* Blog条目间距调整 */
-.page__content br + p {
-  margin-top: 0.3em !important;
-}
-
 /* 期刊名称斜体颜色 */
 .page__content em {
   font-style: italic !important;
   color: var(--morandi-green-dark) !important;
+}
+
+/* 响应式布局调整 */
+@media (min-width: 48em) {
+  .layout--single .archive {
+    width: calc(100% - 180px - 1em) !important;
+    float: right !important;
+    padding-left: 1em !important;
+  }
+}
+
+@media (min-width: 64em) {
+  .layout--single .archive {
+    width: calc(100% - 200px - 1em) !important;
+  }
+}
+
+@media (min-width: 80em) {
+  .layout--single .archive {
+    width: calc(100% - 300px - 1em) !important;
+  }
 }
