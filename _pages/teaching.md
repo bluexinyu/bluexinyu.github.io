@@ -14,14 +14,18 @@ classes: wide
 **Instructor** | *Kent State University* | August 2023 - November 2023
 
 • Designed and delivered engaging lectures, incorporating multimedia and real-world examples
+
 • Assessed student performance through presentations and written assignments
+
 • Conducted office hours, addressing individual concerns and offering mentorship for students aspiring for careers in communication
 
 ### Media Research Design and Thesis Writing
 **Graduate Assistant** | *Renmin University* | February 2021 - July 2021
 
 • Assisted Professor Yan Yan in Media Research Design and Thesis Writing course
+
 • Led group discussions for 60 students enrolled in the course
+
 • Provided constructive feedback on student performance and designed interactive class materials
 
 ## Teaching Philosophy
