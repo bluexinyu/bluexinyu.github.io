@@ -44,3 +44,23 @@
 .author__urls a {
   font-size: 1em !important;
 }
+
+/* Publications页面字体调整 */
+.page__content {
+  font-size: 0.85em !important;
+}
+
+.page__content h2 {
+  font-size: 1.3em !important;
+  margin-bottom: 1em !important;
+}
+
+.page__content p {
+  line-height: 1.4 !important;
+  margin-bottom: 0.8em !important;
+}
+
+/* 调整正文内容字体 */
+.page__content strong {
+  font-weight: 600 !important;
+}
