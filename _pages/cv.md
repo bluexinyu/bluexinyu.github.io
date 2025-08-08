@@ -24,5 +24,5 @@ classes: wide
 </div>
 
 <div style="margin-top: 20px; text-align: center; color: #666; font-size: 0.9em;">
-  <p><em>Last updated: August 2025</em></p>
+  <p><em>Last updated: February 2025</em></p>
 </div>
