@@ -21,27 +21,46 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 修复布局 - 让内容充满可用空间 */
-.page__content {
-  font-size: 0.85em !important;
-  line-height: 1.6 !important;
+/* 专门修复single layout页面的空白问题 */
+.layout--single .archive {
   width: 100% !important;
-  max-width: none !important;
-}
-
-.archive {
-  width: 100% !important;
-  max-width: none !important;
-}
-
-.archive .page__content {
-  width: 100% !important;
-  max-width: none !important;
+  float: none !important;
+  margin-left: 0 !important;
   margin-right: 0 !important;
+  padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* 个人信息栏调整 */
+.layout--single .page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.layout--single .page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 1em !important;
+}
+
+/* 确保在有sidebar的情况下正确布局 */
+@media (min-width: 64em) {
+  .layout--single .archive {
+    width: calc(100% - 200px - 1em) !important;
+    float: right !important;
+    padding-left: 1em !important;
+  }
+}
+
+@media (min-width: 80em) {
+  .layout--single .archive {
+    width: calc(100% - 300px - 1em) !important;
+  }
+}
+
+/* 个人信息栏样式 */
 .author__avatar img {
   width: 140px !important;
   height: 175px !important;
@@ -67,6 +86,11 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
 
 .author__urls li {
   font-size: 0.75em !important;
+}
+
+.page__content {
+  font-size: 0.85em !important;
+  line-height: 1.6 !important;
 }
 
 .page__content h2 {
