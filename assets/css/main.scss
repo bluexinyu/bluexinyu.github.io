@@ -68,3 +68,19 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
 .page__content p {
   margin-bottom: 0.9em !important;
 }
+
+/* CV页面PDF查看器样式 */
+.page__content iframe {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.btn--primary {
+  background-color: #0066cc !important;
+  border-color: #0066cc !important;
+}
+
+.btn--primary:hover {
+  background-color: #0052a3 !important;
+  border-color: #0052a3 !important;
+}
