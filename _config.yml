@@ -1,4 +1,5 @@
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin: "contrast"
 
 title: "Xinyu Zhang"
 name: "Xinyu Zhang" 
@@ -8,18 +9,15 @@ url: "https://bluexinyu.github.io"
 author:
   name: "Xinyu Zhang"
   avatar: "/assets/images/profile.jpg"
-  bio: |
-    Ph.D Student<br>
-    Department of Communication<br>
-    College of Communication Arts and Sciences<br>
-    Michigan State University<br>
-    Email: zxinyu@msu.edu
-  location: "East Lansing, Michigan"
+  bio: "Ph.D Student<br/>Department of Communication<br/>College of Communication Arts and Sciences<br/>Michigan State University<br/>Email: zxinyu [at] msu [dot] edu"
   links:
+    - label: "CV"
+      icon: "far fa-fw fa-file-pdf"
+      url: "/cv/"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=LxyHOE8AAAAJ&hl=en"
-    - label: "ResearchGate"  
+    - label: "ResearchGate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Xinyu-Zhang-293?ev=hdr_xprf"
     - label: "Twitter"
@@ -39,16 +37,13 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-# Jekyll处理_pages目录的设置
 include:
+  - .htaccess
   - _pages
 
-# Jekyll配置
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+sass:
+  sass_dir: _sass
+  style: compressed
 
 defaults:
   - scope:
@@ -58,20 +53,8 @@ defaults:
       layout: single
       author_profile: true
   - scope:
-      path: "_pages"
+      path: ""
       type: pages
     values:
-      layout: single  
+      layout: single
       author_profile: true
-
-minimal_mistakes_skin: "default"
-
-
-# 学术字体配置
-google_fonts:
-  - name: "Crimson Text"
-    weights: "400,400i,600,600i"
-  - name: "Source Sans Pro" 
-    weights: "300,400,600"
-  - name: "Source Code Pro"
-    weights: "400"
