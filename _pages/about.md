@@ -1,75 +1,32 @@
-cat > _pages/cv.md << 'EOF'
 ---
-permalink: /cv/
-title: "Curriculum Vitae"
+permalink: /about/
+title: "About"
 layout: single
 author_profile: true
 classes: wide
 ---
 
-## Xinyu Zhang
+I am a Ph.D. student in Communication Studies at [Michigan State University](https://comm.msu.edu/), advised by [Dr. Yoo Jung (Erika) Oh](https://comartsci.msu.edu/our-people/yoo-jung-erika-oh). My research uses experimental methods to study persuasive chatbots and social support in digital health contexts.
 
-**Ph.D. Student**  
-Department of Communication Studies  
-College of Communication Arts and Sciences  
-Michigan State University  
-Email: zxinyu@msu.edu  
+Methodologically, I conduct controlled experiments and analyze large-scale digital data using Python and R for natural language processing and statistical modeling.
 
----
+My work examines how persuasive chatbots influence health decision-making and how online communities provide social support for health-related challenges. I focus on understanding these processes among vulnerable populations including women and young people.
+
+My research has been published in *Journal of Medical Internet Research*, *Archives of Sexual Behavior*, *Computers in Human Behavior*, *new media & society*, and *Sex Education*. I have received the Top Paper Award from the Association for Education in Journalism and Mass Communication.
 
 ## Education
 
 **Ph.D. in Communication Studies** (2024—present)  
-*Michigan State University*, East Lansing, Michigan  
-Advisor: Dr. Yoo Jung (Erika) Oh
+*Michigan State University*  
+Advisor: [Dr. Yoo Jung (Erika) Oh](https://comartsci.msu.edu/our-people/yoo-jung-erika-oh)
 
 **M.A. in Communication Studies** (2022—2024)  
-*Kent State University*, Kent, Ohio  
-Advisor: Professor Nichole Egbert
+*Kent State University*  
+Advisor: [Professor Nichole Egbert](https://www.kent.edu/comm/profile/nichole-l-egbert)
 
 **M.A. in Communication Studies** (2020—2022)  
-*Renmin University*, Beijing, China  
-Advisor: Professor Yan Yan
+*Renmin University*  
+Advisor: [Professor Yan Yan](https://scholar.google.com/citations?user=T8V7Wk8AAAAJ&hl=en)
 
 **B.A. in Business Administration** (2016—2020)  
-*Zhongnan University of Economics and Law*, Wuhan, China
-
----
-
-## Publications
-
-[7 peer-reviewed publications listed in [Publications](/publications/) page]
-
----
-
-## Research Experience
-
-**Graduate Research Assistant** (2024—present)  
-*Michigan State University*
-
-**Graduate Research Assistant** (2022—2024)  
-*Kent State University*
-
----
-
-## Teaching Experience
-
-**Instructor, Introduction to Human Communication** (2024—present)  
-*Michigan State University*
-
-**Instructor, Introduction to Human Communication** (2023)  
-*Kent State University*
-
----
-
-## Awards & Honors
-
-- Top Paper Award, AEJMC Commission on the Status of Women (2023)
-- First Place Student-Faculty Paper, AEJMC (2023)
-- Dr. Dominic Infante Communication Scholarship, Kent State University (2023)
-
----
-
-*PDF version available upon request*
-EOF
-
+*Zhongnan University of Economics and Law*
