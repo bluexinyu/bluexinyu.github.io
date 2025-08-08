@@ -21,7 +21,27 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 简化的sidebar调整 */
+/* 修复布局 - 让内容充满可用空间 */
+.page__content {
+  font-size: 0.85em !important;
+  line-height: 1.6 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.archive {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.archive .page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* 个人信息栏调整 */
 .author__avatar img {
   width: 140px !important;
   height: 175px !important;
@@ -47,11 +67,6 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
 
 .author__urls li {
   font-size: 0.75em !important;
-}
-
-.page__content {
-  font-size: 0.85em !important;
-  line-height: 1.6 !important;
 }
 
 .page__content h2 {
