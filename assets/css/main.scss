@@ -164,3 +164,27 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   padding-bottom: 0.5em !important;
   border-bottom: 2px solid #3498db !important;
 }
+
+/* Blog页面简洁列表样式 */
+.page__content p {
+  margin-bottom: 0.5em !important;
+  line-height: 1.6 !important;
+}
+
+.page__content p strong {
+  font-weight: 600 !important;
+  color: #2c3e50 !important;
+  font-size: 0.9em !important;
+  margin-right: 1em !important;
+}
+
+.page__content p a {
+  color: #3498db !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+}
+
+.page__content p a:hover {
+  text-decoration: underline !important;
+  color: #2980b9 !important;
+}
