@@ -22,19 +22,13 @@ body {
   line-height: 1.5 !important;
 }
 
-h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
+h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 统一所有页面的主标题格式 */
+/* 隐藏页面主标题，避免重复 */
 .page__title {
-  font-size: 1.3em !important;
-  font-weight: 600 !important;
-  color: var(--morandi-green-dark) !important;
-  margin-bottom: 1.5em !important;
-  padding-bottom: 0.5em !important;
-  border-bottom: 2px solid var(--morandi-green) !important;
-  margin-top: 0 !important;
+  display: none !important;
 }
 
 /* 二级标题样式 */
@@ -114,12 +108,42 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
   color: var(--morandi-green-dark) !important;
 }
 
-/* 响应式布局调整 */
+/* 调整响应式断点 - 更晚切换到竖屏模式 */
+.layout--single .archive {
+  width: 100% !important;
+  float: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.layout--single .page__content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.layout--single .page__inner-wrap {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 1em !important;
+}
+
+/* 从更大的屏幕开始启用横向布局 */
+@media (min-width: 40em) {
+  .layout--single .archive {
+    width: calc(100% - 160px - 1em) !important;
+    float: right !important;
+    padding-left: 1em !important;
+  }
+}
+
 @media (min-width: 48em) {
   .layout--single .archive {
     width: calc(100% - 180px - 1em) !important;
-    float: right !important;
-    padding-left: 1em !important;
   }
 }
 
@@ -134,3 +158,4 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item, .page__title {
     width: calc(100% - 300px - 1em) !important;
   }
 }
+
