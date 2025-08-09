@@ -5,7 +5,6 @@
 @import "minimal-mistakes";
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+Pro:wght@300;400;600&display=swap');
 
-/* 莫兰迪绿色变量定义 */
 :root {
   --morandi-green: #7A8B7A;
   --morandi-green-light: #9BAF9B;
@@ -26,23 +25,7 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 重要：强制所有页面标题使用绿色下划线格式 */
-.page__title, 
-.page__content h2,
-.archive .page__title,
-.layout--single .page__title {
-  font-size: 1.3em !important;
-  font-weight: 600 !important;
-  color: var(--morandi-green-dark) !important;
-  margin-bottom: 1.5em !important;
-  padding-bottom: 0.5em !important;
-  border-bottom: 2px solid var(--morandi-green) !important;
-  margin-top: 0 !important;
-  display: block !important;
-}
-
-/* 确保About页面标题显示并格式化 */
-body.layout--single .page__title {
+.page__title, .page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
@@ -52,7 +35,6 @@ body.layout--single .page__title {
   margin-top: 0 !important;
 }
 
-/* 三级标题 */
 .page__content h3 {
   font-size: 1.1em !important;
   font-weight: 600 !important;
@@ -61,20 +43,6 @@ body.layout--single .page__title {
   margin-bottom: 15px !important;
 }
 
-/* APA悬挂缩进格式 - 专门针对Publications页面 */
-.page__content p:has(strong:first-child) {
-  text-indent: -2em !important;
-  padding-left: 2em !important;
-  margin-bottom: 1.2em !important;
-  line-height: 1.6 !important;
-}
-
-/* 确保Publications列表项有悬挂缩进 */
-.page__content p strong:first-child {
-  margin-left: 0 !important;
-}
-
-/* 链接颜色 */
 .page__content a {
   color: var(--morandi-green) !important;
   text-decoration: none !important;
@@ -85,7 +53,6 @@ body.layout--single .page__title {
   text-decoration: underline !important;
 }
 
-/* 导航链接 */
 .masthead__menu-item a {
   color: var(--morandi-green-dark) !important;
 }
@@ -94,7 +61,6 @@ body.layout--single .page__title {
   color: var(--morandi-green) !important;
 }
 
-/* 侧边栏样式 */
 .author__avatar img {
   width: 140px !important;
   height: 175px !important;
@@ -127,27 +93,18 @@ body.layout--single .page__title {
   line-height: 1.6 !important;
 }
 
-/* Blog页面样式 */
-.page__content p strong:not(:first-child) {
+.page__content p strong {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
   font-size: 0.9em !important;
   margin-right: 1em !important;
 }
 
-/* Teaching页面bullet points格式 */
-.page__content ul li {
-  margin-bottom: 0.8em !important;
-  line-height: 1.5 !important;
-}
-
-/* 期刊名称斜体 */
 .page__content em {
   font-style: italic !important;
   color: var(--morandi-green-dark) !important;
 }
 
-/* 响应式布局 */
 @media (min-width: 40em) {
   .layout--single .archive {
     width: calc(100% - 160px - 1em) !important;
@@ -171,14 +128,6 @@ body.layout--single .page__title {
 @media (min-width: 80em) {
   .layout--single .archive {
     width: calc(100% - 300px - 1em) !important;
-  }
-}
-
-/* 移动设备上的悬挂缩进调整 */
-@media (max-width: 768px) {
-  .page__content p:has(strong:first-child) {
-    text-indent: -1.5em !important;
-    padding-left: 1.5em !important;
   }
 }
 
