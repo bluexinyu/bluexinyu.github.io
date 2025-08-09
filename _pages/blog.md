@@ -1,5 +1,6 @@
 ---
 permalink: /blog/
+title: "Blog"
 layout: single
 author_profile: true
 classes: wide

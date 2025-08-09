@@ -25,7 +25,12 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 统一页面中的h2标题格式 - 绿色下划线 */
+/* 关键：隐藏Jekyll自动生成的页面标题 */
+.page__title {
+  display: none !important;
+}
+
+/* 内容中的h2标题使用绿色格式 */
 .page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
@@ -44,18 +49,12 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   margin-bottom: 15px !important;
 }
 
-/* APA悬挂缩进 - 针对Publications页面 */
-.page__content p strong:first-child {
-  display: inline-block;
-  width: 2em;
-  margin-left: -2em;
-}
-
+/* APA悬挂缩进 */
 .page__content p:has(strong:first-child) {
-  margin-left: 2em;
-  text-indent: -2em;
-  margin-bottom: 1.2em;
-  line-height: 1.6;
+  margin-left: 2em !important;
+  text-indent: -2em !important;
+  margin-bottom: 1.2em !important;
+  line-height: 1.6 !important;
 }
 
 .page__content a {
@@ -147,8 +146,8 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
 
 @media (max-width: 768px) {
   .page__content p:has(strong:first-child) {
-    margin-left: 1.5em;
-    text-indent: -1.5em;
+    margin-left: 1.5em !important;
+    text-indent: -1.5em !important;
   }
 }
 

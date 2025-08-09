@@ -1,5 +1,6 @@
 ---
 permalink: /conferences/
+title: "Conferences"
 layout: single
 author_profile: true
 classes: wide
