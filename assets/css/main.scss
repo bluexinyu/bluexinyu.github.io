@@ -25,7 +25,8 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-.page__title, .page__content h2 {
+/* 统一页面中的h2标题格式 - 绿色下划线 */
+.page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
@@ -41,6 +42,20 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   color: var(--morandi-green-dark) !important;
   margin-top: 25px !important;
   margin-bottom: 15px !important;
+}
+
+/* APA悬挂缩进 - 针对Publications页面 */
+.page__content p strong:first-child {
+  display: inline-block;
+  width: 2em;
+  margin-left: -2em;
+}
+
+.page__content p:has(strong:first-child) {
+  margin-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 1.2em;
+  line-height: 1.6;
 }
 
 .page__content a {
@@ -97,7 +112,6 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
   font-size: 0.9em !important;
-  margin-right: 1em !important;
 }
 
 .page__content em {
@@ -128,6 +142,13 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
 @media (min-width: 80em) {
   .layout--single .archive {
     width: calc(100% - 300px - 1em) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page__content p:has(strong:first-child) {
+    margin-left: 1.5em;
+    text-indent: -1.5em;
   }
 }
 

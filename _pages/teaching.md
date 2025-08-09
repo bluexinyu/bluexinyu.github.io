@@ -10,7 +10,7 @@ classes: wide
 ### Introduction to Human Communication (Current)
 **Instructor** | *Michigan State University* | August 2024 - May 2026
 
-### Introduction to Human Communication  
+### Introduction to Human Communication
 **Instructor** | *Kent State University* | August 2023 - November 2023
 
 • Designed and delivered engaging lectures, incorporating multimedia and real-world examples
