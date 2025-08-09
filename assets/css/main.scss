@@ -26,23 +26,9 @@ h1, h2, h3, h4, h5, h6, .masthead__menu-item {
   font-family: "Source Sans Pro", Arial, sans-serif !important;
 }
 
-/* 重要：强制所有页面标题使用绿色下划线格式 */
+/* 统一所有页面标题格式 - 绿色下划线 */
 .page__title, 
-.page__content h2,
-.archive .page__title,
-.layout--single .page__title {
-  font-size: 1.3em !important;
-  font-weight: 600 !important;
-  color: var(--morandi-green-dark) !important;
-  margin-bottom: 1.5em !important;
-  padding-bottom: 0.5em !important;
-  border-bottom: 2px solid var(--morandi-green) !important;
-  margin-top: 0 !important;
-  display: block !important;
-}
-
-/* 确保About页面标题显示并格式化 */
-body.layout--single .page__title {
+.page__content h2 {
   font-size: 1.3em !important;
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
@@ -61,17 +47,12 @@ body.layout--single .page__title {
   margin-bottom: 15px !important;
 }
 
-/* APA悬挂缩进格式 - 专门针对Publications页面 */
+/* APA悬挂缩进格式 */
 .page__content p:has(strong:first-child) {
   text-indent: -2em !important;
   padding-left: 2em !important;
   margin-bottom: 1.2em !important;
   line-height: 1.6 !important;
-}
-
-/* 确保Publications列表项有悬挂缩进 */
-.page__content p strong:first-child {
-  margin-left: 0 !important;
 }
 
 /* 链接颜色 */
@@ -128,17 +109,11 @@ body.layout--single .page__title {
 }
 
 /* Blog页面样式 */
-.page__content p strong:not(:first-child) {
+.page__content p strong {
   font-weight: 600 !important;
   color: var(--morandi-green-dark) !important;
   font-size: 0.9em !important;
   margin-right: 1em !important;
-}
-
-/* Teaching页面bullet points格式 */
-.page__content ul li {
-  margin-bottom: 0.8em !important;
-  line-height: 1.5 !important;
 }
 
 /* 期刊名称斜体 */
@@ -174,7 +149,7 @@ body.layout--single .page__title {
   }
 }
 
-/* 移动设备上的悬挂缩进调整 */
+/* 移动设备适配 */
 @media (max-width: 768px) {
   .page__content p:has(strong:first-child) {
     text-indent: -1.5em !important;

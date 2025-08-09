@@ -30,3 +30,4 @@ Advisor: Professor Yan Yan
 
 **B.A. in Business Administration** (2016—2020)  
 *Zhongnan University of Economics and Law*
+
