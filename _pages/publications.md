@@ -8,6 +8,8 @@ classes: wide
 
 ## Peer-Reviewed Publications
 
+**[8]** **Zhang, X.**, Oh, Y. J., Zhang, Y., & Zhu, J. (2025). Seeking validation in the digital age: The impact of validation seeking on self-image and internalized stigma among self- vs. clinically diagnosed individuals on r/ADHD. *PLOS One*, 20(10), e0331856. [DOI](https://doi.org/10.1371/journal.pone.0331856)
+
 **[7]** **Zhang, X.**, & Wang, Y. (2025). Swiping through the stars: Exploring identity and intimacy through astrology sensemaking on Douyin. *new media & society*, 14614448251344588. [DOI](https://doi.org/10.1177/14614448251344588)
 
 **[6]** **Zhang, X.**, Zhu, J., Kenne, D. R., & Jin, R. (2025). Teenager substance use on reddit: Mixed methods computational analysis of frames and emotions. *Journal of Medical Internet Research*, 27, e59338. [DOI](https://doi.org/10.2196/59338)
