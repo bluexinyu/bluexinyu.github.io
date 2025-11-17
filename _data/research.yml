@@ -1,0 +1,114 @@
+# ==========================================
+# 研究页面配置文件 - 像填空题一样简单！
+# ==========================================
+#
+# 使用说明：
+# 1. 修改下面的内容，不要改变缩进格式
+# 2. 图片放在 /assets/images/research/ 文件夹
+# 3. 如果暂时没有内容，可以留空或删除整个项目
+# 4. 复制粘贴项目模板来添加更多研究项目
+#
+# ==========================================
+
+# 页面顶部介绍
+page_intro: |
+  My research uses experimental methods to study persuasive chatbots and social support in digital health contexts.
+  I focus on communication technology and well-being, exploring how technology contributes to medicalization,
+  user agency in adopting technology, and the impact of persuasive AI on human perceptions and behaviors.
+
+# ==========================================
+# 研究项目列表
+# ==========================================
+#
+# 项目模板（复制下面的格式来添加新项目）：
+# - title: "项目标题"
+#   description: "项目描述，可以多行"
+#   image: "research/project-image.jpg"  # 图片路径（相对于 /assets/images/）
+#   tags: ["标签1", "标签2", "标签3"]  # 可选
+#   link: "https://链接地址"  # 可选，项目相关链接
+#   status: "进行中"  # 可选，例如：进行中、已完成、即将开始
+#
+# ==========================================
+
+projects:
+  # 项目 1 - 示例
+  - title: "Persuasive Chatbots in Digital Health"
+    description: |
+      Investigating how AI-powered chatbots influence health-related behaviors and decision-making.
+      This study examines the persuasive mechanisms of conversational AI and their impact on
+      user wellbeing and medical adherence.
+    image: "research/chatbot-health.svg"
+    tags: ["AI", "Digital Health", "Persuasion"]
+    status: "Ongoing"
+    # link: ""  # 如果有相关链接可以取消注释并填写
+
+  # 项目 2 - 示例
+  - title: "Social Support in Online Health Communities"
+    description: |
+      Exploring how individuals seek and receive social support in digital health contexts,
+      particularly focusing on stigmatized health conditions and the role of anonymity
+      in online communities.
+    image: "research/social-support.svg"
+    tags: ["Social Support", "Online Communities", "Health Communication"]
+    status: "Ongoing"
+
+  # 项目 3 - 示例
+  - title: "Medicalization and Communication Technology"
+    description: |
+      Examining how communication technology contributes to medicalization processes,
+      including the exacerbation of health anxiety and the spread of medical misinformation
+      on social media platforms.
+    image: "research/medicalization.svg"
+    tags: ["Medicalization", "Social Media", "Health Anxiety"]
+    status: "Ongoing"
+
+  # 项目 4 - 空模板（可以删除或填写）
+  # - title: ""
+  #   description: ""
+  #   image: "research/placeholder.jpg"
+  #   tags: []
+  #   status: ""
+
+# ==========================================
+# 研究兴趣领域（可选）
+# ==========================================
+research_interests:
+  - name: "Health Communication"
+    icon: "fas fa-heartbeat"
+    description: "Digital health interventions and health behavior change"
+
+  - name: "Human-AI Interaction"
+    icon: "fas fa-robot"
+    description: "Persuasive AI and conversational agents"
+
+  - name: "Computer-Mediated Communication"
+    icon: "fas fa-comments"
+    description: "Online social support and community dynamics"
+
+  - name: "Research Methods"
+    icon: "fas fa-chart-line"
+    description: "Experimental design and computational methods"
+
+# ==========================================
+# 研究工具和方法（可选）
+# ==========================================
+methods:
+  - "Experimental Design"
+  - "Survey Research"
+  - "Computational Text Analysis"
+  - "Natural Language Processing"
+  - "Mixed Methods"
+  - "Statistical Analysis (R, SPSS)"
+
+# ==========================================
+# 合作机会（可选）
+# ==========================================
+collaboration_text: |
+  I am always interested in collaborating on projects related to health communication,
+  AI ethics, and digital wellbeing. Feel free to reach out if you'd like to discuss
+  potential research opportunities.
+
+# ==========================================
+# 页面底部联系信息（可选，留空则不显示）
+# ==========================================
+contact_cta: "Interested in collaborating? Contact me at zxinyu@msu.edu"
