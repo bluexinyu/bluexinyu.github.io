@@ -1,0 +1,44 @@
+# SITE SETUP
+# Xinyu Zhang - Academic Website
+
+# Appearance - Simple and Clean
+appearance:
+  mode: light
+  color: sage  # Clean, academic color
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    org_name: 'Michigan State University'
+    description: 'Xinyu Zhang - Ph.D. Student in Communication Studies at Michigan State University. Research on health communication, AI, and social media.'
+    twitter: 'Xinyu__Zhang'
+  analytics:
+    google_analytics: ''
+
+# Site header - Minimal
+header:
+  navbar:
+    enable: true
+    fixed_to_top: true
+    show_search: false
+    show_theme_chooser: false
+    logo:
+      text: 'Xinyu Zhang'
+
+# Site footer - Simple
+footer:
+  copyright:
+    notice: '© {year} Xinyu Zhang'
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features - Minimal
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false

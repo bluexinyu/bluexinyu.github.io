@@ -1,0 +1,42 @@
+# Navigation Menu
+# Simple, clean navigation like Li Yuwei's site
+
+main:
+  - name: About
+    url: /
+    weight: 10
+
+  - name: My Research
+    url: /research/
+    weight: 20
+    hasChildren: true
+
+  - name: Research Overview
+    parent: My Research
+    url: /research/
+    weight: 21
+
+  - name: CV
+    parent: My Research
+    url: /cv/
+    weight: 22
+
+  - name: Publications
+    url: /publications/
+    weight: 30
+
+  - name: Teaching
+    url: /teaching/
+    weight: 40
+
+  - name: Research Methods
+    url: /methods/
+    weight: 50
+
+  - name: Resources
+    url: /resources/
+    weight: 60
+
+  - name: Connect
+    url: /connect/
+    weight: 70
