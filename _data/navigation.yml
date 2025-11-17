@@ -1,15 +1,26 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Research"
+
+  - title: "My Research"
     url: /research/
-  - title: "Blog"
-    url: /blog/
+    children:
+      - title: "Research Overview"
+        url: /research/
+      - title: "CV"
+        url: /cv/
+
   - title: "Publications"
     url: /publications/
-  - title: "Conferences"
-    url: /conferences/
+
   - title: "Teaching"
     url: /teaching/
-  - title: "CV"
-    url: /cv/
+
+  - title: "Research Methods"
+    url: /research-methods/
+
+  - title: "Resources"
+    url: /resources/
+
+  - title: "Connect"
+    url: /connect/
