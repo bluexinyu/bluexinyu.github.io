@@ -11,7 +11,15 @@ I welcome conversations about research collaboration, academic opportunities, an
 
 ### Send Me a Message
 
-<form action="https://formspree.io/f/xanydgnr" method="POST" style="max-width: 600px;">
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width: 600px;">
+<!--
+IMPORTANT: To activate this form:
+1. Visit https://formspree.io
+2. Sign up with your email: zxinyu@msu.edu
+3. Create a new form
+4. Replace YOUR_FORM_ID above with your actual form ID
+5. OR use this direct email fallback until you set it up
+-->
 
   <div style="margin-bottom: 1em;">
     <label for="name" style="display: block; margin-bottom: 0.5em; font-weight: 500;">Name</label>
