@@ -3,298 +3,69 @@ permalink: /research/
 title: "My Research"
 layout: single
 author_profile: true
-classes: wide
 ---
 
-<style>
-/* ==========================================
-   研究页面自定义样式
-   ========================================== */
+I use experimental methods to study persuasive chatbots and social support in digital health contexts. My work examines how communication technology shapes health perceptions and behaviors.
 
-/* 页面介绍区域 - MSU莫兰迪绿色 */
-.research-intro {
-  font-size: 1.1em;
-  line-height: 1.8;
-  margin-bottom: 3em;
-  padding: 2em;
-  background: #F5F7F6;
-  border-left: 4px solid #7A9B8E;
-  border-radius: 4px;
-}
+---
 
-/* 研究项目网格布局 */
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2em;
-  margin: 2em 0;
-}
+## Current Projects
 
-/* 单个研究项目卡片 */
-.research-project {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
+### Mental Health Medicalization on Social Media
 
-.research-project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
+I examine how social media platforms shape mental health perceptions and behaviors. My work focuses on self-diagnosis practices, validation seeking, and stigma formation in communities discussing ADHD, depression, and anxiety disorders.
 
-/* 项目图片 */
-.project-image {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  background: #e9ecef;
-}
+**Keywords**: Medicalization, Mental Health, Social Media, Stigma
 
-/* 项目内容区 */
-.project-content {
-  padding: 1.5em;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
+---
 
-.project-title {
-  font-size: 1.3em;
-  font-weight: 600;
-  margin-bottom: 0.5em;
-  color: #2c3e50;
-}
+### Social Support in Online Health Communities
 
-.project-status {
-  display: inline-block;
-  padding: 0.3em 0.8em;
-  background: #7A9B8E;
-  color: white;
-  border-radius: 20px;
-  font-size: 0.85em;
-  margin-bottom: 1em;
-}
+I explore how people seek and receive support in digital health spaces. My research examines communities addressing stigmatized health issues, studying self-disclosure patterns, anonymity effects, and peer support dynamics.
 
-.project-description {
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 1em;
-  flex-grow: 1;
-}
+**Keywords**: Social Support, Online Communities, Stigma, Self-Disclosure
 
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin-top: auto;
-}
+---
 
-.project-tag {
-  padding: 0.4em 0.8em;
-  background: #E8EBE9;
-  border-radius: 4px;
-  font-size: 0.85em;
-  color: #5A6B5F;
-}
+### Youth Health Risk Behaviors on Digital Platforms
 
-/* 研究兴趣区域 */
-.research-interests {
-  margin: 3em 0;
-}
+I investigate how teenagers discuss health risk behaviors on social media. My work analyzes substance use narratives, emotional expressions, and framing strategies using computational methods to study large-scale Reddit discussions.
 
-.interests-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5em;
-  margin-top: 1.5em;
-}
+**Keywords**: Youth Health, Substance Use, Computational Methods, Public Health
 
-.interest-item {
-  padding: 1.5em;
-  background: #fff;
-  border: 2px solid #e9ecef;
-  border-radius: 8px;
-  text-align: center;
-  transition: border-color 0.3s ease;
-}
+---
 
-.interest-item:hover {
-  border-color: #7A9B8E;
-}
+### AI Chatbots in Health Communication
 
-.interest-icon {
-  font-size: 2.5em;
-  color: #7A9B8E;
-  margin-bottom: 0.5em;
-}
+I study how persuasive AI influences health-related decisions and behaviors. My experimental work examines chatbot design features, persuasive strategies, trust formation, and user agency with AI health advisors.
 
-.interest-name {
-  font-weight: 600;
-  font-size: 1.1em;
-  margin-bottom: 0.5em;
-}
+**Keywords**: AI, Chatbots, Persuasion, Ethics
 
-.interest-description {
-  color: #666;
-  font-size: 0.9em;
-}
+---
 
-/* 研究方法标签云 - MSU莫兰迪绿色 */
-.methods-section {
-  margin: 3em 0;
-  padding: 2em;
-  background: #F5F7F6;
-  border-radius: 8px;
-}
+### Digital Intimacy and Identity Formation
 
-.methods-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-  margin-top: 1em;
-}
+I explore how digital platforms shape identity and intimacy practices. My research examines astrology sensemaking, sexual health education, and online sexuality, studying how users navigate cultural norms and personal values in digital spaces.
 
-.method-tag {
-  padding: 0.6em 1.2em;
-  background: white;
-  border: 2px solid #7A9B8E;
-  border-radius: 20px;
-  color: #7A9B8E;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
+**Keywords**: Identity, Intimacy, Sexuality, Cultural Practices
 
-.method-tag:hover {
-  background: #7A9B8E;
-  color: white;
-}
+---
 
-/* 合作区域 - MSU莫兰迪绿色渐变 */
-.collaboration-section {
-  margin: 3em 0;
-  padding: 2em;
-  background: linear-gradient(135deg, #7A9B8E 0%, #8FA89E 100%);
-  color: white;
-  border-radius: 8px;
-  text-align: center;
-}
+## Research Interests
 
-.collaboration-section h2 {
-  color: white;
-  margin-bottom: 1em;
-}
+- Health Communication
+- Human-AI Interaction
+- Online Communities
+- Youth & Media
 
-.cta-button {
-  display: inline-block;
-  padding: 1em 2em;
-  background: white;
-  color: #7A9B8E;
-  border-radius: 30px;
-  font-weight: 600;
-  text-decoration: none;
-  margin-top: 1em;
-  transition: transform 0.3s ease;
-}
+## Methods
 
-.cta-button:hover {
-  transform: scale(1.05);
-  text-decoration: none;
-}
+Experimental Design • Survey Research • Computational Text Analysis • Natural Language Processing • Mixed Methods • Statistical Analysis (R, SPSS)
 
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
+---
 
-  .interests-grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+## Collaboration
 
-<!-- 页面介绍 -->
-{% if site.data.research.page_intro %}
-<div class="research-intro">
-  {{ site.data.research.page_intro | markdownify }}
-</div>
-{% endif %}
+I welcome collaborations on health communication, AI ethics, and digital wellbeing research. I am particularly interested in interdisciplinary projects that combine communication theory with computational methods.
 
-<!-- 研究项目 -->
-{% if site.data.research.projects %}
-<h2>Research Projects</h2>
-<div class="research-grid">
-  {% for project in site.data.research.projects %}
-  <div class="research-project">
-    {% if project.image %}
-    <img src="/assets/images/{{ project.image }}" alt="{{ project.title }}" class="project-image">
-    {% endif %}
-
-    <div class="project-content">
-      <h3 class="project-title">{{ project.title }}</h3>
-
-      {% if project.status %}
-      <span class="project-status">{{ project.status }}</span>
-      {% endif %}
-
-      <div class="project-description">
-        {{ project.description | markdownify }}
-      </div>
-
-      {% if project.tags %}
-      <div class="project-tags">
-        {% for tag in project.tags %}
-        <span class="project-tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
-    </div>
-  </div>
-  {% endfor %}
-</div>
-{% endif %}
-
-<!-- 研究兴趣 -->
-{% if site.data.research.research_interests %}
-<div class="research-interests">
-  <h2>Research Interests</h2>
-  <div class="interests-grid">
-    {% for interest in site.data.research.research_interests %}
-    <div class="interest-item">
-      <div class="interest-icon">
-        <i class="{{ interest.icon }}"></i>
-      </div>
-      <div class="interest-name">{{ interest.name }}</div>
-      <div class="interest-description">{{ interest.description }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
-<!-- 研究方法 -->
-{% if site.data.research.methods %}
-<div class="methods-section">
-  <h2>Research Methods & Tools</h2>
-  <div class="methods-cloud">
-    {% for method in site.data.research.methods %}
-    <span class="method-tag">{{ method }}</span>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
-<!-- 合作区域 -->
-{% if site.data.research.collaboration_text %}
-<div class="collaboration-section">
-  <h2>Collaboration</h2>
-  <div>{{ site.data.research.collaboration_text | markdownify }}</div>
-  {% if site.data.research.contact_cta %}
-  <a href="mailto:zxinyu@msu.edu" class="cta-button">{{ site.data.research.contact_cta }}</a>
-  {% endif %}
-</div>
-{% endif %}
+**Contact**: [zxinyu@msu.edu](mailto:zxinyu@msu.edu)
