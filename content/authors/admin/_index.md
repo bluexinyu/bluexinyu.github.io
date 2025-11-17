@@ -1,7 +1,7 @@
 ---
 title: Xinyu Zhang
 role: Ph.D. Student in Communication Studies
-avatar_filename: avatar.jpg
+avatar_filename: avatar.png
 
 organizations:
   - name: Michigan State University
