@@ -16,10 +16,25 @@ main:
     url: /research/
     weight: 21
 
+  - name: Communication and Close Relationships
+    parent: My Research
+    url: /research/close-relationships/
+    weight: 22
+
+  - name: Dynamic Communication Processes
+    parent: My Research
+    url: /research/dynamic-processes/
+    weight: 23
+
+  - name: Addressing Challenges to Human Well-Being
+    parent: My Research
+    url: /research/human-wellbeing/
+    weight: 24
+
   - name: CV
     parent: My Research
     url: /cv/
-    weight: 22
+    weight: 25
 
   - name: Publications
     url: /publications/

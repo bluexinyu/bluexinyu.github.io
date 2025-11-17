@@ -4,36 +4,25 @@ summary: Research overview
 type: page
 ---
 
-I use experimental methods to study persuasive chatbots and social support in digital health contexts. My work examines how communication technology shapes health perceptions and behaviors.
+My research program examines how communication shapes relationships, well-being, and social change. I draw on experimental methods, longitudinal surveys, physiological measures, and computational approaches to understand the cognitive, affective, and behavioral aspects of consequential conversations.
 
-## Current Projects
+## Research Areas
 
-### Mental Health Medicalization on Social Media
+I focus on three interconnected areas:
 
-I examine how social media platforms shape mental health perceptions and behaviors. My work focuses on self-diagnosis practices, validation seeking, and stigma formation in communities discussing ADHD, depression, and anxiety disorders.
+### [Communication and Close Relationships](/research/close-relationships/)
+Interpersonal relationships are defined and sustained by consequential conversations. I examine the cognitive, affective, and behavioral aspects of conversations in close relationships—from conflict resolution to social support.
 
----
+### [Dynamic Communication Processes](/research/dynamic-processes/)
+Communication produces changes in conversation partners and audiences. I use longitudinal methods, multilevel modeling, and dynamic dyadic systems approaches to characterize causal processes underlying communication experiences.
 
-### Social Support in Online Health Communities
-
-I explore how people seek and receive support in digital health spaces. My research examines communities addressing stigmatized health issues, studying self-disclosure patterns, anonymity effects, and peer support dynamics.
-
----
-
-### Youth Health Risk Behaviors on Digital Platforms
-
-I investigate how teenagers discuss health risk behaviors on social media. My work analyzes substance use narratives, emotional expressions, and framing strategies using computational methods to study large-scale Reddit discussions.
-
----
-
-### AI Chatbots in Health Communication
-
-I study how persuasive AI influences health-related decisions and behaviors. My experimental work examines chatbot design features, persuasive strategies, trust formation, and user agency with AI health advisors.
+### [Addressing Challenges to Human Well-Being](/research/human-wellbeing/)
+My work examines how communication patterns affect health outcomes, health disparities, and climate action. This includes provider-patient communication and persuasive messaging for social good.
 
 ---
 
 ## Collaboration
 
-I welcome collaborations on health communication, AI ethics, and digital wellbeing research. I am particularly interested in interdisciplinary projects that combine communication theory with computational methods.
+I welcome collaborations on health communication, interpersonal communication, and computational methods. I am particularly interested in interdisciplinary projects that combine communication theory with innovative methodologies.
 
 **Contact**: [zxinyu@msu.edu](mailto:zxinyu@msu.edu)
