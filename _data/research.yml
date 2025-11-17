@@ -12,9 +12,10 @@
 
 # 页面顶部介绍
 page_intro: |
-  My research uses experimental methods to study persuasive chatbots and social support in digital health contexts.
-  I focus on communication technology and well-being, exploring how technology contributes to medicalization,
-  user agency in adopting technology, and the impact of persuasive AI on human perceptions and behaviors.
+  I use experimental methods to study persuasive chatbots and social support in digital health contexts.
+  My work examines how communication technology shapes health perceptions and behaviors.
+  I focus on three key areas: medicalization through technology, user agency in digital health spaces,
+  and the persuasive effects of AI on health-related decision-making.
 
 # ==========================================
 # 研究项目列表
@@ -31,43 +32,60 @@ page_intro: |
 # ==========================================
 
 projects:
-  # 项目 1 - 示例
-  - title: "Persuasive Chatbots in Digital Health"
+  # 项目 1
+  - title: "Mental Health Medicalization on Social Media"
     description: |
-      Investigating how AI-powered chatbots influence health-related behaviors and decision-making.
-      This study examines the persuasive mechanisms of conversational AI and their impact on
-      user wellbeing and medical adherence.
-    image: "research/chatbot-health.svg"
-    tags: ["AI", "Digital Health", "Persuasion"]
+      I examine how social media platforms shape mental health perceptions and behaviors.
+      My work focuses on self-diagnosis practices, validation seeking, and stigma formation.
+      I study communities discussing ADHD, depression, and anxiety disorders.
+      This research reveals how digital spaces both support and complicate mental health care.
+    image: "research/medicalization.svg"
+    tags: ["Medicalization", "Mental Health", "Social Media", "Stigma"]
     status: "Ongoing"
-    # link: ""  # 如果有相关链接可以取消注释并填写
 
-  # 项目 2 - 示例
+  # 项目 2
   - title: "Social Support in Online Health Communities"
     description: |
-      Exploring how individuals seek and receive social support in digital health contexts,
-      particularly focusing on stigmatized health conditions and the role of anonymity
-      in online communities.
+      I explore how people seek and receive support in digital health spaces.
+      My research examines communities addressing stigmatized health issues.
+      I study self-disclosure patterns, anonymity effects, and peer support dynamics.
+      This work highlights the unique affordances of online health communities.
     image: "research/social-support.svg"
-    tags: ["Social Support", "Online Communities", "Health Communication"]
+    tags: ["Social Support", "Online Communities", "Stigma", "Self-Disclosure"]
     status: "Ongoing"
 
-  # 项目 3 - 示例
-  - title: "Medicalization and Communication Technology"
+  # 项目 3
+  - title: "Youth Health Risk Behaviors on Digital Platforms"
     description: |
-      Examining how communication technology contributes to medicalization processes,
-      including the exacerbation of health anxiety and the spread of medical misinformation
-      on social media platforms.
-    image: "research/medicalization.svg"
-    tags: ["Medicalization", "Social Media", "Health Anxiety"]
+      I investigate how teenagers discuss health risk behaviors on social media.
+      My work analyzes substance use narratives, emotional expressions, and framing strategies.
+      I use computational methods to study large-scale Reddit discussions.
+      This research informs public health interventions for youth populations.
+    image: "research/chatbot-health.svg"
+    tags: ["Youth Health", "Substance Use", "Computational Methods", "Public Health"]
     status: "Ongoing"
 
-  # 项目 4 - 空模板（可以删除或填写）
-  # - title: ""
-  #   description: ""
-  #   image: "research/placeholder.jpg"
-  #   tags: []
-  #   status: ""
+  # 项目 4
+  - title: "AI Chatbots in Health Communication"
+    description: |
+      I study how persuasive AI influences health-related decisions and behaviors.
+      My experimental work examines chatbot design features and persuasive strategies.
+      I investigate trust formation, compliance, and user agency with AI health advisors.
+      This research addresses ethical implications of AI in healthcare contexts.
+    image: "research/chatbot-health.svg"
+    tags: ["AI", "Chatbots", "Persuasion", "Ethics"]
+    status: "In Progress"
+
+  # 项目 5
+  - title: "Digital Intimacy and Identity Formation"
+    description: |
+      I explore how digital platforms shape identity and intimacy practices.
+      My research examines astrology sensemaking, sexual health education, and online sexuality.
+      I study how users navigate cultural norms and personal values in digital spaces.
+      This work bridges communication studies with gender and sexuality studies.
+    image: "research/social-support.svg"
+    tags: ["Identity", "Intimacy", "Sexuality", "Cultural Practices"]
+    status: "Ongoing"
 
 # ==========================================
 # 研究兴趣领域（可选）
@@ -75,19 +93,19 @@ projects:
 research_interests:
   - name: "Health Communication"
     icon: "fas fa-heartbeat"
-    description: "Digital health interventions and health behavior change"
+    description: "Mental health stigma, medicalization, and digital health interventions"
 
   - name: "Human-AI Interaction"
     icon: "fas fa-robot"
-    description: "Persuasive AI and conversational agents"
+    description: "Persuasive chatbots, trust formation, and ethical AI design"
 
-  - name: "Computer-Mediated Communication"
-    icon: "fas fa-comments"
-    description: "Online social support and community dynamics"
+  - name: "Online Communities"
+    icon: "fas fa-users"
+    description: "Social support, self-disclosure, and stigmatized health conditions"
 
-  - name: "Research Methods"
-    icon: "fas fa-chart-line"
-    description: "Experimental design and computational methods"
+  - name: "Youth & Media"
+    icon: "fas fa-mobile-alt"
+    description: "Adolescent health behaviors and social media risk communication"
 
 # ==========================================
 # 研究工具和方法（可选）
@@ -104,9 +122,9 @@ methods:
 # 合作机会（可选）
 # ==========================================
 collaboration_text: |
-  I am always interested in collaborating on projects related to health communication,
-  AI ethics, and digital wellbeing. Feel free to reach out if you'd like to discuss
-  potential research opportunities.
+  I welcome collaborations on health communication, AI ethics, and digital wellbeing research.
+  I am particularly interested in interdisciplinary projects that combine communication theory
+  with computational methods. Feel free to reach out to discuss research opportunities.
 
 # ==========================================
 # 页面底部联系信息（可选，留空则不显示）
