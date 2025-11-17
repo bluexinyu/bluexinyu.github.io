@@ -4,7 +4,8 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - hugo-test-site
+      - claude/hugo-website-test-01PVwPxSo8ghZDX3rLzcnpFW
+      - main
   workflow_dispatch:
 
 permissions:
