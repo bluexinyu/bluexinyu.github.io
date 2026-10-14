@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bluexinyu.github.io/sitemap.xml
