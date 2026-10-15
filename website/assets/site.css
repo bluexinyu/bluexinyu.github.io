@@ -211,7 +211,7 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
 /* Interactive atlas: all five journeys share one geographic overview. */
 .page-beyond-academia .ride-layout{display:flex;flex-direction:column;gap:22px}
 .page-beyond-academia .ride-map-column{width:100%;order:-1}
-.page-beyond-academia #rides-map{height:570px;background:#f2f7f8;border:1px solid #e6ece8;border-radius:12px}
+.page-beyond-academia #rides-map{height:490px;background:#f2f7f8;border:1px solid #e6ece8;border-radius:12px}
 .page-beyond-academia .ride-choices{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 20px}
 .page-beyond-academia .ride-choices button{padding:8px 0;min-height:40px}
 .route-badge{display:flex!important;align-items:center;gap:7px;white-space:nowrap;font-family:var(--sans);cursor:pointer}
@@ -276,3 +276,9 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
  .album-bottom{grid-template-columns:1fr}
  .album-record{width:66%;max-width:340px;justify-self:center;margin-top:14px!important}
 }
+
+/* Keep route controls and photographs steady when a trip is selected. */
+.page-beyond-academia .ride-detail{margin:8px 0 0;min-height:24px;padding:0;font-size:13px;line-height:24px;color:var(--muted)}
+.route-badge:focus-visible,.ride-choices button:focus-visible{outline:2px solid var(--green);outline-offset:4px;border-radius:4px}
+@media(max-width:800px){.page-beyond-academia .ride-detail{min-height:48px}}
+@media(max-width:380px){.page-beyond-academia .ride-detail{min-height:72px}}

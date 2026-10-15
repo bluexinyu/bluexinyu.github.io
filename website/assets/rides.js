@@ -10,11 +10,19 @@
   wuhan:{number:'05',title:'Wuhan → Enshi',region:'Hubei · Central China',description:'A cycling trip from Wuhan to Enshi, across Hubei.',points:[[30.59,114.31],[30.27,109.49]],names:['Wuhan','Enshi'],label:[32.5,116],bounds:[[29.4,108.5],[32,115.5]]}
  };
  container.replaceChildren();
- const map=L.map(container,{scrollWheelZoom:false,minZoom:3,maxZoom:8,zoomSnap:.25});
+ const map=L.map(container,{scrollWheelZoom:false,minZoom:1,maxZoom:8,zoomSnap:.25,maxBoundsViscosity:1});
  map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
  map.attributionControl.addAttribution('Geography: <a href="https://www.naturalearthdata.com/">Natural Earth</a>');
  map.createPane('land');map.getPane('land').style.zIndex=250;
  const allBounds=[[17,73],[54,135]];
+ function resetView(){
+  map.setMinZoom(1);
+  const fitZoom=map.getBoundsZoom(allBounds,false,L.point(32,32));
+  map.setMinZoom(Math.max(1,Math.floor(fitZoom*4)/4));
+  map.setMaxBounds(null);
+  map.fitBounds(allBounds,{padding:[16,16],animate:false});
+  map.setMaxBounds(map.getBounds().pad(.1));
+ }
  const detail=document.getElementById('ride-detail');
  const choices=[...document.querySelectorAll('[data-ride]')];
  const layers={};let selected='all';
@@ -33,7 +41,9 @@
   L.polyline(geometry,{color:'#fff',weight:7,opacity:.95,interactive:false}).addTo(map);
   const line=L.polyline(geometry,{color:'#2b6752',weight:3,opacity:.9,className:'ride-route',lineCap:'round'}).addTo(map);
   const hit=L.polyline(geometry,{weight:22,opacity:0}).addTo(map);
-  const badge=L.marker(trip.label,{title:trip.title,alt:trip.title,icon:L.divIcon({className:'route-badge',html:'<span>'+trip.number+'</span><b>'+trip.title+'</b>',iconSize:[174,34],iconAnchor:[0,17]})}).addTo(map);
+  const badgePoint=geometry[key==='hainan'?16:Math.floor(geometry.length/2)];
+  const badge=L.marker(badgePoint,{title:trip.title,alt:trip.title,icon:L.divIcon({className:'route-badge',html:'<span>'+trip.number+'</span>',iconSize:[28,28],iconAnchor:[-8,14]})}).addTo(map);
+  badge.getElement()?.setAttribute('aria-label',trip.number+' '+trip.title);
   const dots=[];
   trip.points.forEach((point,i)=>{
    if(key==='hainan')return;
@@ -55,22 +65,19 @@
    item.line.setStyle({weight:active?4.5:3,opacity:key==='all'||active?1:.55});
    item.line.getElement()?.classList.toggle('route-active',active);
    item.badge.getElement()?.classList.toggle('badge-active',active);
-   item.dots.forEach(dot=>active?dot.openTooltip():dot.closeTooltip());
+   if(!active)item.dots.forEach(dot=>dot.closeTooltip());
   }
  }
  function select(key){
   if(key===selected)key="all";
   selected=key;paint(key);
   choices.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.ride===key)));
-  const trip=trips[key],h=document.createElement('h3'),p=document.createElement('p');
-  detail.hidden=!trip;
-  h.textContent=trip?trip.title:'';
-  p.textContent=trip?trip.description:'';
-  detail.replaceChildren(...(trip?[h,p]:[]));
-  if(!trip)map.fitBounds(allBounds,{padding:[16,16]});
+  const trip=trips[key];
+  detail.textContent=trip?trip.description:'';
+  if(!trip)resetView();
  }
- choices.forEach(button=>{button.addEventListener('click',()=>select(button.dataset.ride));button.addEventListener('mouseenter',()=>paint(button.dataset.ride));button.addEventListener('mouseleave',()=>paint(selected));});
- new ResizeObserver(()=>{map.invalidateSize({pan:false});if(selected==='all')map.fitBounds(allBounds,{padding:[16,16]});}).observe(container);
+ choices.forEach(button=>{button.addEventListener('click',()=>select(button.dataset.ride));button.addEventListener('mouseenter',()=>paint(button.dataset.ride));button.addEventListener('mouseleave',()=>paint(selected));button.addEventListener('focus',()=>paint(button.dataset.ride));button.addEventListener('blur',()=>paint(selected));});
+ new ResizeObserver(()=>{map.invalidateSize({pan:false});resetView();}).observe(container);
  document.querySelector('.ride-notes').hidden=true;
  select('all');
 })();
