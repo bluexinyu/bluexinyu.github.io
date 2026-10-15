@@ -52,7 +52,7 @@ nav a:hover,nav a[aria-current=page]{color:var(--green)}nav a[aria-current=page]
 .work-status-heading{font-size:18px;font-weight:650;line-height:1.4;color:var(--green);letter-spacing:-.015em;margin:0 0 20px}
 .citation-list{list-style:none;padding:0;margin:0}
 .research-citation{margin:0 0 28px;overflow-wrap:break-word}.research-citation:last-child{margin-bottom:0}
-.work-title{font-size:17px;font-weight:450;line-height:1.5;letter-spacing:-.01em;margin:0 0 7px}
+.work-title{font-size:17px;font-weight:500;line-height:1.5;letter-spacing:-.01em;margin:0 0 7px}
 .work-title a{color:inherit;text-decoration:none}.work-title a:hover{color:var(--green);text-decoration:underline}
 .work-authors{font-size:var(--text-meta);line-height:1.6;color:var(--muted);margin:0}
 .work-authors strong{font-weight:600;color:#454545}
@@ -161,7 +161,7 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
 .page-research main{max-width:none}
 .research-layout{display:grid;grid-template-columns:200px minmax(0,1fr);gap:48px;align-items:start}
 .research-directory{display:flex;flex-direction:column;gap:8px;position:sticky;top:28px;align-self:start}
-.research-directory a{display:block;padding:10px 0;min-height:44px;font-size:14px;line-height:1.5;color:var(--muted);text-decoration:none}
+.research-directory a{display:block;padding:10px 0;min-height:44px;font-size:15px;line-height:1.5;color:var(--muted);text-decoration:none}
 .research-directory a:hover,.research-directory a[aria-selected=true]{color:var(--green)}
 .research-directory a[aria-selected=true]{font-weight:600}
 .research-results{min-width:0}
