@@ -175,3 +175,60 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
  .research-directory a{padding:8px 0}
  .research-category .area-heading{margin-top:0;margin-bottom:28px}
 }
+/* Beyond Academia: real photographs and a quiet interactive travel map. */
+.site-header nav{column-gap:20px}
+.cycling-hero{margin:4px 0 56px}
+.cycling-hero img{width:100%;height:auto;border-radius:3px}
+.cycling-hero figcaption,.cycling-moment figcaption{font-size:13px;color:var(--muted);margin-top:10px}
+.ride-section>h2{margin-bottom:8px}
+.ride-intro{font-size:14px;color:var(--muted);margin-bottom:24px;max-width:700px}
+.ride-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:32px;align-items:start}
+.ride-choices{display:flex;flex-direction:column;gap:4px}
+.ride-choices button{background:none;border:0;text-align:left;padding:11px 0;min-height:44px;color:var(--muted);font-size:15px;line-height:1.5}
+.ride-choices button[aria-pressed=true]{color:var(--green);font-weight:600}
+.ride-map-column{min-width:0}
+#rides-map{height:450px;background:#f1f3f2;border-radius:3px;z-index:0;font-family:var(--sans)}
+#rides-map a{color:var(--green)}
+.ride-pin{background:transparent!important;border:none!important}
+.ride-pin span{display:block;width:18px;height:18px;background:var(--green);border:3px solid white;border-radius:50%;box-shadow:0 1px 5px #18453b40}
+.ride-label{font:500 12px/1.4 var(--sans)!important;color:var(--green)!important;border:0!important;box-shadow:0 1px 5px #0001!important}
+.ride-detail{margin-top:20px;min-height:104px}.ride-detail h3{font-size:17px;font-weight:550;margin:0 0 8px}.ride-detail p{font-size:14px;color:var(--muted);margin:0;line-height:1.7}
+.ride-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 48px;margin:32px 0 48px}
+.ride-notes h3{font-size:16px;font-weight:550;margin:0 0 6px}.ride-notes p{font-size:14px;color:var(--muted);margin:0}
+.cycling-moment{max-width:430px;margin:0 auto}.cycling-moment img{width:100%;height:auto;border-radius:3px}
+.map-fallback{padding:24px;font-size:14px}
+.map-tiles-unavailable:after{content:'Map background unavailable';position:absolute;bottom:28px;left:12px;background:white;padding:4px 8px;z-index:500;font-size:12px;color:var(--muted);pointer-events:none}
+@media(max-width:1000px){.site-header{flex-wrap:wrap;gap:16px 32px}.site-header nav{column-gap:18px}}
+@media(max-width:650px){.ride-layout{grid-template-columns:1fr;gap:20px}.ride-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 20px}.ride-choices button{font-size:14px}.ride-notes{grid-template-columns:1fr;gap:22px}#rides-map{height:360px}.cycling-hero{margin-bottom:40px}.ride-detail{min-height:0}.site-header nav{column-gap:16px}}
+
+#rides-map{background:#e8eff1}
+.map-country-label{text-align:center;font:500 10px/20px var(--sans);letter-spacing:.12em;color:#87968e;white-space:nowrap}
+.cycling-moment img{max-height:480px;width:auto;margin:0 auto;object-fit:contain}
+.cycling-moment{text-align:center}
+
+.ride-section{margin-bottom:48px}
+
+/* Interactive atlas: all five journeys share one geographic overview. */
+.page-beyond-academia .ride-layout{display:flex;flex-direction:column;gap:22px}
+.page-beyond-academia .ride-map-column{width:100%;order:-1}
+.page-beyond-academia #rides-map{height:570px;background:#f2f7f8;border:1px solid #e6ece8;border-radius:12px}
+.page-beyond-academia .ride-choices{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 20px}
+.page-beyond-academia .ride-choices button{padding:8px 0;min-height:40px}
+.route-badge{display:flex!important;align-items:center;gap:7px;white-space:nowrap;font-family:var(--sans);cursor:pointer}
+.route-badge span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 28px;background:#fff;color:var(--green);border:1px solid #c4d4ca;border-radius:50%;font-size:10px;font-weight:650;box-shadow:0 2px 8px #18453b12}
+.route-badge b{font-size:12px;font-weight:550;color:#244b3e;background:#ffffffeb;border-radius:4px;padding:4px 6px}
+.route-badge.badge-active span{background:var(--green);color:white;border-color:var(--green)}
+.route-badge.badge-active b{color:var(--green);box-shadow:0 2px 12px #18453b18}
+.ride-route.route-active{stroke-dasharray:9 5;animation:route-flow 1.8s linear infinite}
+@keyframes route-flow{to{stroke-dashoffset:-28}}
+.ride-detail{position:relative;margin:18px 0 0;padding-right:160px;min-height:70px}
+.ride-zoom{position:absolute;right:0;top:0;border:1px solid #c9d7cf;border-radius:6px;background:white;color:var(--green);padding:9px 12px;font-size:12px;cursor:pointer}
+.route-map-note{font-size:12px;color:var(--muted);margin:16px 0 0}
+@media(max-width:650px){.page-beyond-academia #rides-map{height:430px}.route-badge b{font-size:10px;padding:3px}.route-badge{gap:4px}.route-badge span{width:23px;height:23px;flex-basis:23px}.page-beyond-academia .ride-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.ride-detail{padding-right:0}.ride-zoom{position:static;margin-top:12px}}
+@media(prefers-reduced-motion:reduce){.ride-route.route-active{animation:none}}
+
+@media(max-width:650px){.route-badge b{display:none}.route-badge.badge-active b{display:block}}
+
+.ride-index{font-size:11px;color:#668475;margin-right:6px;font-variant-numeric:tabular-nums}
+
+.ride-distance{display:block;margin:3px 0 0 24px;font-size:12px;font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
