@@ -232,3 +232,17 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
 .ride-index{font-size:11px;color:#668475;margin-right:6px;font-variant-numeric:tabular-nums}
 
 .ride-distance{display:block;margin:3px 0 0 24px;font-size:12px;font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* A quiet route list and a compact photo/illustration gallery. */
+.page-beyond-academia .ride-choices{grid-template-columns:repeat(5,minmax(0,1fr));gap:12px 18px}
+.page-beyond-academia .ride-choices button{font-size:13px}
+.page-beyond-academia .ride-detail{padding-right:0;min-height:0}
+.ride-route.route-active{animation-iteration-count:1}
+.cycling-gallery{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:40px;align-items:start;margin:36px 0}
+.cycling-record,.cycling-gallery .cycling-moment{margin:0;max-width:100%;min-width:0}
+.cycling-record img{display:block;width:100%;height:auto;border-radius:6px}
+.cycling-record figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+@media(max-width:800px){.page-beyond-academia .ride-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.cycling-gallery{gap:24px}}
+@media(max-width:550px){.cycling-gallery{grid-template-columns:1fr}.cycling-record{max-width:340px;margin:0 auto}}
+
+.page-beyond-academia .ride-choices{align-items:start}

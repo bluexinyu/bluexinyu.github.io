@@ -59,6 +59,7 @@
   }
  }
  function select(key){
+  if(key===selected)key="all";
   selected=key;paint(key);
   choices.forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.ride===key)));
   const trip=trips[key],h=document.createElement('h3'),p=document.createElement('p');
@@ -66,10 +67,7 @@
   h.textContent=trip?trip.title:'';
   p.textContent=trip?trip.description:'';
   detail.replaceChildren(...(trip?[h,p]:[]));
-  if(trip){
-   const zoom=document.createElement('button');zoom.type='button';zoom.className='ride-zoom';zoom.textContent='Explore this area';
-   zoom.addEventListener('click',()=>map.flyToBounds(trip.bounds,{padding:[45,45],maxZoom:7,animate:!window.matchMedia('(prefers-reduced-motion: reduce)').matches,duration:.7}));detail.append(zoom);
-  }else map.fitBounds(allBounds,{padding:[16,16]});
+  if(!trip)map.fitBounds(allBounds,{padding:[16,16]});
  }
  choices.forEach(button=>{button.addEventListener('click',()=>select(button.dataset.ride));button.addEventListener('mouseenter',()=>paint(button.dataset.ride));button.addEventListener('mouseleave',()=>paint(selected));});
  new ResizeObserver(()=>{map.invalidateSize({pan:false});if(selected==='all')map.fitBounds(allBounds,{padding:[16,16]});}).observe(container);
