@@ -81,3 +81,35 @@
  document.querySelector('.ride-notes').hidden=true;
  select('all');
 })();
+
+(() => {
+ // Count the total up once when it scrolls into view.
+ const count=document.querySelector('.ride-count');
+ if(count&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  const target=+count.dataset.target;count.textContent='0';
+  const io=new IntersectionObserver(entries=>{
+   if(!entries[0].isIntersecting)return;io.disconnect();
+   const start=performance.now();
+   (function tick(now){const t=Math.min(1,(now-start)/1200),e=1-(1-t)**3;count.textContent=Math.round(target*e).toLocaleString('en-US');if(t<1)requestAnimationFrame(tick);})(start);
+  });
+  io.observe(count);
+ }
+ // Lightbox for the photo album.
+ const seen=new Set(),images=[...document.querySelectorAll('.ride-album img')].filter(img=>!seen.has(img.src)&&seen.add(img.src));
+ if(!images.length)return;
+ const box=document.createElement('dialog');box.className='lightbox';
+ box.innerHTML='<button type="button" class="lb-close" aria-label="Close">×</button><button type="button" class="lb-prev" aria-label="Previous photo">‹</button><figure><img alt=""><figcaption></figcaption></figure><button type="button" class="lb-next" aria-label="Next photo">›</button>';
+ document.body.append(box);
+ const big=box.querySelector('img'),cap=box.querySelector('figcaption');let index=0;
+ function show(i){index=(i+images.length)%images.length;big.src=images[index].src;big.alt=images[index].alt;cap.textContent=images[index].alt+' · '+(index+1)+' / '+images.length;}
+ document.querySelectorAll('.ride-album img').forEach(img=>{
+  const i=images.findIndex(x=>x.src===img.src);
+  const link=img.closest('a');(link||img).addEventListener('click',e=>{e.preventDefault();show(i);box.showModal();});
+  if(!link){img.tabIndex=0;img.setAttribute('role','button');img.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();show(i);box.showModal();}});}
+ });
+ box.querySelector('.lb-close').onclick=()=>box.close();
+ box.querySelector('.lb-prev').onclick=()=>show(index-1);
+ box.querySelector('.lb-next').onclick=()=>show(index+1);
+ box.addEventListener('click',e=>{if(e.target===box)box.close();});
+ box.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(index-1);if(e.key==='ArrowRight')show(index+1);});
+})();

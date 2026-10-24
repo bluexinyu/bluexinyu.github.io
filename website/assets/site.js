@@ -39,3 +39,30 @@
  window.addEventListener('popstate',fromURL);window.addEventListener('hashchange',fromURL);
  fromURL();
 })();
+
+(() => {
+ // Research: filter the single publication list by area; #area hashes keep old links working.
+ const bar=document.querySelector('.pub-filters');
+ if(!bar)return;
+ const buttons=[...bar.querySelectorAll('button')];
+ const sections=[...document.querySelectorAll('.pub-section')];
+ function apply(area,updateURL){
+  if(!buttons.some(b=>b.dataset.filter===area))area='all';
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===area)));
+  let total=0;
+  sections.forEach(section=>{
+   let shown=0;
+   section.querySelectorAll('.pub-year').forEach(group=>{
+    let n=0;group.querySelectorAll('.pub').forEach(li=>{const on=area==='all'||li.dataset.area===area;li.hidden=!on;n+=on;});
+    group.hidden=!n;shown+=n;
+   });
+   section.hidden=!shown;total+=shown;
+   const count=section.querySelector('.pub-count');if(count)count.textContent=shown;
+  });
+  document.querySelector('.pub-empty').hidden=total>0;
+  if(updateURL)history.replaceState(null,'',area==='all'?location.pathname:'#'+area);
+ }
+ buttons.forEach(b=>b.addEventListener('click',()=>apply(b.dataset.filter,true)));
+ window.addEventListener('hashchange',()=>apply(location.hash.slice(1),false));
+ apply(location.hash.slice(1),false);
+})();
