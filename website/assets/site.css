@@ -367,3 +367,57 @@ footer>span:last-child{display:flex;align-items:center;flex-wrap:wrap;gap:18px}f
 .pub-tag{font-size:11px;font-weight:500;color:#5b7a6c;background:var(--soft);border-radius:3px;padding:1px 7px;letter-spacing:.01em}
 .pub-empty{color:var(--muted)}
 @media(max-width:650px){.pub-year{grid-template-columns:1fr;gap:0}.pub-year-label{padding-top:16px}.pub-year-label:empty{display:none}.pub{padding:12px 0 14px}.pub-filters{gap:6px;margin-bottom:28px}.pub-filters button{padding:5px 11px}}
+
+/* ===== Hero header, tab-bar nav, Topics block (2026-11-07) =====
+   Palette kept to white + ink + MSU green; one pale green tint for highlights. */
+@font-face{font-family:'Kaushan Script';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/KaushanScript-latin.woff2') format('woff2')}
+:root{--tint:#eaf2ee;--tint-strong:#d3e6dc;--key-edge:#cfdfd7}
+
+/* Tab-bar navigation on every page */
+.site-header{flex-direction:column;align-items:stretch;justify-content:flex-start;gap:22px}
+.site-header nav{justify-content:center;gap:4px 6px;padding:8px 18px;background:#fff;border:2px solid var(--green);border-top:0;border-radius:0 0 12px 12px;box-shadow:0 4px 16px rgba(24,69,59,.08),0 2px 6px rgba(24,69,59,.06);font-size:15px}
+.site-header nav a{min-height:40px;padding:0 14px;border-radius:6px;color:var(--green);font-weight:450}
+.site-header nav a:hover{background:var(--soft)}
+.site-header nav a[aria-current=page]{background:var(--tint);font-weight:600}
+
+/* Hero (About page) */
+.hero{display:flex;align-items:center;gap:44px}
+.hero-photo{width:168px;height:168px;flex:0 0 168px;object-fit:cover;object-position:50% 22%;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.13),0 2px 6px rgba(0,0,0,.08)}
+.hero-title{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 26px}
+.hero-name{font-family:'Kaushan Script',var(--sans);font-weight:400;font-size:46px;line-height:1.25;letter-spacing:0;color:var(--green);margin:0}
+.hero-role{margin:0;font-size:18px;font-weight:500;color:var(--muted);letter-spacing:-.01em}
+.hero-role a{text-decoration:none;font-weight:600}
+.keycaps{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.keycap{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 16px;border-radius:20px;background:linear-gradient(#fff,#f4f8f6);color:var(--green);font-size:14px;font-weight:500;text-decoration:none;white-space:nowrap;box-shadow:0 3px 0 var(--key-edge),0 4px 8px rgba(0,0,0,.05);transition:transform .12s ease,box-shadow .12s ease}
+a.keycap:hover{transform:translateY(1px);box-shadow:0 2px 0 var(--green),0 3px 6px rgba(0,0,0,.10)}
+.keycap .link-icon{margin:0;width:17px;height:17px}
+.keycap.icon-only{width:44px;padding:0;justify-content:center}
+
+/* About body */
+.about-body{max-width:760px;padding-top:48px}
+.about-body>p{line-height:1.75}
+.topics{margin-top:40px}
+.topics-heading{display:inline;font-size:20px;font-weight:600;letter-spacing:-.015em;line-height:1.5;background:linear-gradient(transparent 56%,var(--tint-strong) 56%);padding:0 4px}
+.topic-list{list-style:none;margin:20px 0 0;padding:0}
+.topic-list li{position:relative;padding-left:28px;margin-bottom:14px;line-height:1.7}
+.topic-list li:before{content:'';position:absolute;left:4px;top:.55em;width:9px;height:9px;border:2px solid var(--green);border-radius:50%}
+.hl{font-weight:600;color:var(--ink);background:linear-gradient(transparent 60%,var(--tint) 60%);padding:0 2px}
+.interest-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;padding:0;list-style:none}
+.interest-tags li{height:34px;padding:0 14px;font-size:13px;display:inline-flex;align-items:center;border-radius:17px;background:linear-gradient(#fff,#f4f8f6);color:var(--green);font-weight:500;box-shadow:0 3px 0 var(--key-edge),0 4px 8px rgba(0,0,0,.04)}
+
+@media(max-width:800px){
+ .hero{gap:28px}.hero-photo{width:132px;height:132px;flex-basis:132px}
+ .hero-name{font-size:38px}.hero-role{font-size:16px}
+ .site-header nav{padding:6px 10px}.site-header nav a{padding:0 10px}
+}
+@media(max-width:600px){
+ .hero{flex-direction:column;align-items:flex-start;gap:20px}
+ .keycaps{gap:10px}
+ .site-header nav{font-size:14px;gap:2px}.site-header nav a{padding:0 8px;min-height:38px}
+ .about-body{padding-top:36px}
+}
+@media print{.keycaps,.interest-tags{display:none}}
+
+/* Chinese name (Ma Shan Zheng subset: 张芯渝 only) */
+@font-face{font-family:'Ma Shan Zheng';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/MaShanZheng-name.woff2') format('woff2')}
+.hero-name .name-cn{font-family:'Ma Shan Zheng',serif;font-size:.9em;margin-left:.35em;letter-spacing:.04em}
