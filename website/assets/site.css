@@ -437,3 +437,9 @@ main h1:after{content:'';display:block;width:36px;height:3px;border-radius:2px;b
 @media(max-width:800px){.masthead{margin-top:22px}.site-header .hero{margin-top:28px}.brand{font-size:27px}}
 @media(max-width:600px){.page-about .site-header nav{margin-top:18px}}
 @media print{.site-header nav{position:static}}
+
+/* ===== 820px column, desktop-only sticky nav (2026-11-07 #4) ===== */
+.wrap{max-width:820px}
+.about-body{max-width:none}
+.page-research main{max-width:none}
+@media(max-width:800px){.site-header nav{position:static}html{scroll-padding-top:28px}}
