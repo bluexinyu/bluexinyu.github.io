@@ -421,3 +421,19 @@ a.keycap:hover{transform:translateY(1px);box-shadow:0 2px 0 var(--green),0 3px 6
 /* Chinese name (Ma Shan Zheng subset: 张芯渝 only) */
 @font-face{font-family:'Ma Shan Zheng';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/MaShanZheng-name.woff2') format('woff2')}
 .hero-name .name-cn{font-family:'Ma Shan Zheng',serif;font-size:.9em;margin-left:.35em;letter-spacing:.04em}
+
+/* ===== Inner-page brand, title bar, sticky nav (2026-11-07 #3) ===== */
+html{scroll-padding-top:96px}
+/* Let the nav stick against the whole page column, not just the header box. */
+.site-header{display:contents}
+.masthead{margin-top:30px}
+.site-header .hero{margin-top:36px}
+.site-header nav{position:sticky;top:0;z-index:50;margin-top:8px}
+.page-about .site-header nav{margin-top:22px}
+.brand{font-family:'Kaushan Script',var(--sans);font-weight:400;font-size:30px;line-height:1.3;letter-spacing:0;color:var(--green)}
+.brand .name-cn{font-family:'Ma Shan Zheng',serif;font-size:.9em;margin-left:.3em;letter-spacing:.04em}
+.hero-photo{object-position:50% 50%}
+main h1:after{content:'';display:block;width:36px;height:3px;border-radius:2px;background:var(--green);margin-top:14px}
+@media(max-width:800px){.masthead{margin-top:22px}.site-header .hero{margin-top:28px}.brand{font-size:27px}}
+@media(max-width:600px){.page-about .site-header nav{margin-top:18px}}
+@media print{.site-header nav{position:static}}
